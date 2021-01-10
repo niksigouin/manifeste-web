@@ -237,71 +237,36 @@ blockquote {
 .right-aligned{
 	text-align: right;
 }
-.text-split > *{
-	display: inline-block;
+/* LÉO article 6 */
+#bribes{
+	background-color: #2D2A26;
 }
-.text-split{
-	display: flex;
-	justify-content: space-between;
+#bribes .title{
+	color: #A9ADAE;
+	z-index: 10;
 }
-#la-mort-eclot-toujours-sans-douleur .title-wrapper{
-	position: relative;
-	height: 1000px;
-}
-#la-mort-eclot-toujours-sans-douleur .float{
-	position: absolute;
-	top: 0px;
-	width: 100%;
-}
-#la-mort-eclot-toujours-sans-douleur #pos-tweak1, #la-mort-eclot-toujours-sans-douleur #pos-tweak3{
-	position: absolute;
-	right: 40px;
-}
-#la-mort-eclot-toujours-sans-douleur #pos-tweak2{
-	position: absolute;
-	margin-left: -380px;
-	left: 50%;
-}
-#la-mort-eclot-toujours-sans-douleur .back-image{
-	width: 1000px;
-	margin-left: calc( -750px + 25vw);
-	left: 0px;
-	position: absolute;
-}
-.back-image img{
-	display: block;
-	width: 100%;
-}
-#la-mort-eclot-toujours-sans-douleur{
-    background-color: #1D1C19;
-}
-#la-mort-eclot-toujours-sans-douleur p, #la-mort-eclot-toujours-sans-douleur h1{
-	color: #fff;
-}
-.third-col {
-  flex-basis: 33.33%;
-	padding: 20px; /* overrides the 40px from .article-text */
-}
-#defaire-le-lit .vertical-text .title{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    min-height: 1120px;
-    width: 100%;
-    transform: rotate(180deg);
-	margin-left: 40px;
-}
-#defaire-le-lit .vertical-text{
-	background-color: #A9ADAE;
-}
-#defaire-le-lit{
-	background-color: #000;
-}
-#defaire-le-lit p{
+#bribes p{
 	color: #A9ADAE;
 }
-.medium-text{
-	font-family: acumin-pro, sans-serif;
-	font-size: 2em;
-	font-weight: 300;
+#bribes .hero{
 	padding: 40px;
+}
+#bribes #pos-tweak1{
+    position: absolute;
+    right: 33.33%;
+	top: -60%; /* anchored in bottom right corner */
+}
+#bribes .intro{
+    flex-direction: row;
+    position: relative;
+}
+#bribes .half-col{
+	justify-content: flex-start;
+}
+#bribes .col-medium{
+	flex-basis: 66.66%;
+}
+#bribes .article-text {
+  padding: 0px;
+  box-sizing: border-box;
 }

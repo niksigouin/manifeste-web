@@ -1,0 +1,291 @@
+/* CSS Document */
+/* DEFAULT STYLES */
+body {
+  margin: 0;
+}
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+img {
+  display: block;
+}
+p, blockquote {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+h1 {
+  font-family: "Neue World", serif;
+  text-transform: uppercase;
+  font-size: 10em;
+  font-weight: 400;
+	line-height: 0.8em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.half-col {
+  flex-basis: 50%;
+}
+.col-small {
+  flex-basis: 16.65%;
+}
+.credits p {
+  text-transform: uppercase;
+  font-family: "Neue World", serif;
+  font-size: 1.3em;
+}
+.credits .author, .credits .visuals-by {
+  font-family: acumin-pro, sans-serif;
+  line-height: 1em;
+  padding-bottom: 16px;
+}
+#fatum .intro {
+  min-height: 600px;
+}
+#fatum .intro > * {
+  min-height: inherit;
+}
+blockquote {
+  margin: 0;
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+.quote {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* TITLE AND HERO */
+.title {
+  /* background-color: aquamarine; */
+	margin-top: 40px;
+	padding-left: 20px;
+}
+.credits {
+  /* background-color: cornflowerblue; */
+	padding-left: 20px;
+}
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row !important;
+}
+#fatum .hero {
+  background-image: url("../Links/fatum-bg.jpg");
+}
+.hero .forme {
+  flex-basis: 60%;
+}
+.half-col {
+  flex-basis: 50%;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.v-centered {
+  flex-direction: column;
+}
+.v-centered .img-box{
+	align-items: center;
+  justify-content: center;
+}
+.img-box {
+  flex: 1;
+  position: relative;
+
+	align-items:flex-start;
+  justify-content: center; /* center horizontally */
+  display: flex;
+  height: inherit;
+}
+.img-box img {
+  width: 80%;
+}
+/* TEXT STYLE CLASSES */
+.centered {
+  text-align: center;
+}
+.serif {
+  font-family: "Neue World", serif;
+}
+.sans-serif{
+	font-family: acumin-pro, sans-serif;
+}
+.title .sans-serif{
+	font-weight: 300;
+}
+.article-text {
+  padding: 40px;
+  box-sizing: border-box;
+}
+.col-large{
+	flex-basis: 83.35%;
+}
+.col-large img{
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+#au-travers-de-ta-fenetre .title{
+	height: 230px;
+	z-index: 10;
+	position: relative;
+	width: 100%;
+}
+#au-travers-de-ta-fenetre #pos-tweak1{
+	position: absolute;
+	right: 5%;
+	top: 32px;
+}
+#au-travers-de-ta-fenetre #pos-tweak2{
+	position: absolute;
+	right: 5%;
+	margin-top: 46%;
+	/* top: calc(100vh - 340px); */
+}
+#au-travers-de-ta-fenetre .hero{
+	margin-bottom: 100px;
+}
+.full-col{
+	flex: 1;
+}
+/* thin intro */
+.thin{
+	min-height: inherit; /* cancel min-width given by intro */
+}
+.thin blockquote{
+	padding: 40px 10%;
+}
+.justified p:not(.serif){
+	text-align: justify;
+}
+.text-container{
+	max-width: 1280px; /* was 1000px */
+	margin: 0 auto;
+	position: relative;
+}
+.over-img{
+	position: absolute;
+}
+#au-travers-de-ta-fenetre .over-img:first-of-type{
+	left: -15%;
+	top: 250px;
+}
+#au-travers-de-ta-fenetre .over-img:last-of-type{
+	right: -22%;
+	bottom: 100px;
+}
+.image-fill{
+	width: 100%;
+}
+#ton-corps{
+	background-color: #000;
+}
+#ton-corps .title{
+	color: #A9ADAE;
+	z-index: 10;
+}
+#ton-corps p{
+	color: #fff;
+}
+#ton-corps .hero{
+	padding: 40px;
+}
+#ton-corps #pos-tweak1{
+    position: absolute;
+    right: -110%;
+	top: calc(100vh - 140px); /* anchored in bottom right corner */
+}
+#ton-corps .intro{
+    flex-direction: row;
+    position: relative;
+}
+#ton-corps .half-col{
+	justify-content: flex-start;
+}
+.half-col .col-small{
+	width: 33%; /* 1/6th width */
+}
+.fleche{
+	width: 50px;
+	margin: 0px auto;
+}
+.symbole-anime{
+	height: 200px;
+}
+.img-box{
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.right-aligned{
+	text-align: right;
+}
+/* LÉO article 6 */
+#bribes{
+	background-color: #2D2A26;
+}
+#bribes .title{
+	color: #A9ADAE;
+	z-index: 10;
+}
+#bribes p, h2{
+	color: #A9ADAE;
+}
+#bribes #pos-tweak1{
+    position: absolute;
+    right: 33.33%;
+	top: -60%;
+}
+#bribes .intro{
+    flex-direction: row;
+    position: relative;
+}
+#bribes .col-half{
+	flex-basis: 50%;
+}
+#bribes .col-medium{
+	flex-basis: 66.66%;
+}
+#bribes .col-medium-small{
+	flex-basis: 33.33%;
+}
+#bribes .article-text {
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+#bribes .text-container-special1 {
+  max-width: 1280px; 
+  margin-top: -110px;
+  position: relative;
+}
+#bribes .text-container-special2 {
+  max-width: 1280px; 
+  margin-top: 400px;
+  position: relative;
+}
+#bribes h2 {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+

@@ -305,3 +305,41 @@ blockquote {
 	font-weight: 300;
 	padding: 40px;
 }
+.medium-text.serif{
+	color: #A9ADAE;
+	font-family: "Neue World", serif;
+	font-size: 2.4em;
+}
+#defaire-le-lit .anim{
+	height: 100vh;
+	border: solid 2px green;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+#defaire-le-lit .anim .v-centered{
+	position: absolute;
+}
+#defaire-le-lit .anim .img-box{
+	margin-left: 2.75%;
+	height: inherit;
+	border: 2px solid red;
+}
+.img-box.no-margins img{
+	margin: 0;
+	padding: 0;
+}
+.no-margins {
+	margin: 0;
+	padding: 0;
+}
+.col-large .half-col{
+	flex-basis: 66.66%;
+}
+.col-large .third-col{
+	flex-basis: 33.33%;
+}
+.img-box .mini-forme{
+	width: 120px;
+}

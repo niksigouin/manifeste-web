@@ -1,0 +1,36 @@
+/* CSS Document */
+/* Styles - Article 12 */
+#a-dieu-vit .forme{
+	width: 40px;
+	position: absolute;
+	bottom: 25px;
+	left: 40px;
+}
+#a-dieu-vit .forme-box{
+	position: relative;
+}
+#a-dieu-vit .title-wrapper{
+	margin-bottom: 20px;
+}
+#a-dieu-vit .intro p{
+	padding: 0px 60px; /* cancel out the top padding */
+}
+#a-dieu-vit .mega-forme{
+	width: 120%;
+	margin-left: 20%;
+}
+#a-dieu-vit .forme-box{
+	overflow: hidden;
+}
+#a-dieu-vit .article-text .img-box img{
+	width: 140%;
+}
+#a-dieu-vit{
+	background-color: #A9ADAE;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

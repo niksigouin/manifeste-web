@@ -51,14 +51,14 @@ h1 {
 }
 blockquote {
   margin: 0;
-  color: #fff;
+  color: #000;
   font-size: 2.2em;
   font-weight: 300;
   line-height: 1.3em;
 }
 .quote {
   position: relative;
-  background-color: #000;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +73,7 @@ blockquote {
 .credits {
   /* background-color: cornflowerblue; */
 	padding-left: 20px;
+	padding-right: 20px;
 }
 .hero {
   background-repeat: no-repeat;
@@ -114,7 +115,7 @@ blockquote {
   height: inherit;
 }
 .img-box img {
-  width: 93%;
+  width: 100%;
 }
 /* TEXT STYLE CLASSES */
 .centered {
@@ -130,7 +131,7 @@ blockquote {
 	font-weight: 300;
 }
 .article-text {
-  padding: 40px;
+  padding: 100px;
   box-sizing: border-box;
 }
 .col-large{
@@ -142,18 +143,18 @@ blockquote {
 	padding-right: 40px;
 	box-sizing: border-box;
 }
-#au-travers-de-ta-fenetre .title{
+#dieffen-bacha .title{
 	height: 230px;
 	z-index: 10;
 	position: relative;
 	width: 100%;
 }
-#au-travers-de-ta-fenetre #pos-tweak1{
+#dieffen-bacha #pos-tweak1{
 	position: absolute;
 	right: 5%;
-	top: 32px;
+	top: 0px;
 }
-#au-travers-de-ta-fenetre #pos-tweak2{
+#dieffen-bacha #pos-tweak2{
 	position: absolute;
 	right: 5%;
 	margin-top: 46%;
@@ -183,41 +184,8 @@ blockquote {
 .over-img{
 	position: absolute;
 }
-#au-travers-de-ta-fenetre .over-img:first-of-type{
-	left: -15%;
-	top: 250px;
-}
-#au-travers-de-ta-fenetre .over-img:last-of-type{
-	right: -22%;
-	bottom: 100px;
-}
 .image-fill{
 	width: 100%;
-}
-#ton-corps{
-	background-color: #000;
-}
-#ton-corps .title{
-	color: #A9ADAE;
-	z-index: 10;
-}
-#ton-corps p{
-	color: #fff;
-}
-#ton-corps .hero{
-	padding: 40px;
-}
-#ton-corps #pos-tweak1{
-    position: absolute;
-    right: -110%;
-	top: calc(100vh - 140px); /* anchored in bottom right corner */
-}
-#ton-corps .intro{
-    flex-direction: row;
-    position: relative;
-}
-#ton-corps .half-col{
-	justify-content: flex-start;
 }
 .half-col .col-small{
 	width: 33%; /* 1/6th width */
@@ -237,75 +205,120 @@ blockquote {
 .right-aligned{
 	text-align: right;
 }
-/* LÉO article 6 */
-#bribes{
-	background-color: #2D2A26;
-}
-#bribes .title{
-	color: #A9ADAE;
-	z-index: 10;
-}
-#bribes p, h2{
-	color: #A9ADAE;
-}
-#bribes #pos-tweak1{
-    position: absolute;
-    right: 33.33%;
-	top: -60%;
-}
-#bribes .intro{
-    flex-direction: row;
-    position: relative;
-}
-#bribes .col-half{
-	flex-basis: 50%;
-}
-#bribes .col-medium{
-	flex-basis: 66.66%;
-}
-#bribes .col-medium-small{
-	flex-basis: 33.33%;
-}
-#bribes .article-text {
-  flex-direction: row;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
-}
-#bribes .text-container-special1 {
-  max-width: 1280px; 
-  margin-top: -110px;
-  position: relative;
-}
-#bribes .text-container-special2 {
-  max-width: 1280px; 
-  margin-top: 400px;
-  position: relative;
-}
-#bribes h2 {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 16px;
-}
-.medium-text{
-	font-family: acumin-pro, sans-serif;
-	font-size: 3em;
-	font-weight: 300;
-}
-#bribes .accent{
-	font-family: acumin-pro, sans-serif;
-	color: #FF6333;
-	font-size: 3em;
-	font-weight: 300;
-}
-.right-aligned{
-	text-align: right;
-}
 .text-split > *{
 	display: inline-block;
 }
 .text-split{
 	display: flex;
 	justify-content: space-between;
+}
+#la-mort-eclot-toujours-sans-douleur .title-wrapper{
+	position: relative;
+	height: 1000px;
+}
+#la-mort-eclot-toujours-sans-douleur .float{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+#la-mort-eclot-toujours-sans-douleur #pos-tweak1, #la-mort-eclot-toujours-sans-douleur #pos-tweak3{
+	position: absolute;
+	right: 40px;
+}
+#la-mort-eclot-toujours-sans-douleur #pos-tweak2{
+	position: absolute;
+	margin-left: -380px;
+	left: 50%;
+}
+#la-mort-eclot-toujours-sans-douleur .back-image{
+	width: 1000px;
+	margin-left: calc( -750px + 25vw);
+	left: 0px;
+	position: absolute;
+}
+.back-image img{
+	display: block;
+	width: 100%;
+}
+#la-mort-eclot-toujours-sans-douleur{
+    background-color: #1D1C19;
+}
+#la-mort-eclot-toujours-sans-douleur p, #la-mort-eclot-toujours-sans-douleur h1{
+	color: #fff;
+}
+.third-col {
+  flex-basis: 33.33%;
+	padding: 20px; /* overrides the 40px from .article-text */
+}
+#defaire-le-lit .vertical-text .title{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    min-height: 1120px;
+    width: 100%;
+    transform: rotate(180deg);
+	margin-left: 40px;
+}
+#defaire-le-lit .vertical-text{
+	background-color: #A9ADAE;
+}
+#defaire-le-lit{
+	background-color: #000;
+}
+#defaire-le-lit p{
+	color: #A9ADAE;
+}
+.medium-text{
+	font-family: acumin-pro, sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	padding: 40px;
+}
+.medium-text.serif{
+	color: #A9ADAE;
+	font-family: "Neue World", serif;
+	font-size: 2.4em;
+}
+#defaire-le-lit .anim{
+	height: 100vh;
+	border: solid 2px green;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+#defaire-le-lit .anim .v-centered{
+	position: absolute;
+}
+#defaire-le-lit .anim .img-box{
+	margin-left: 2.75%;
+	height: inherit;
+	border: 2px solid red;
+}
+.img-box.no-margins img{
+	margin: 0;
+	padding: 0;
+}
+.no-margins {
+	margin: 0;
+	padding: 0;
+}
+.col-large .half-col{
+	flex-basis: 66.66%;
+}
+.col-large .third-col{
+	flex-basis: 33.33%;
+}
+.img-box .mini-forme{
+	width: 120px;
+}
+/*Léo article 7*/
+#dieffen-bacha .text-container-special1 {
+  max-width: 1280px; 
+  margin-top: -207px;
+  position: relative;
+}
+#dieffen-bacha .text-container-special2 {
+  max-width: 1280px; 
+  margin-top: -35px;
+  position: relative;
 }

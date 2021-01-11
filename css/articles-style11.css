@@ -1,0 +1,64 @@
+/* CSS Document */
+/* Styles - Article 11 */
+
+#quelque-chose-comme .title h1{
+	font-size: 6em;
+}
+#quelque-chose-comme #pos-tweak1, #quelque-chose-comme #pos-tweak2, #quelque-chose-comme #pos-tweak3{
+	position: absolute;
+	right: 40px;
+}
+#quelque-chose-comme #pos-tweak3{
+	margin-top: 20px; /* baseline shift */
+}
+.two-thirds-col{
+	flex-basis: 66.66%;
+}
+#quelque-chose-comme .title{
+	flex-basis: 59%;
+}
+#quelque-chose-comme .back-image:first-of-type{
+	background-image: url("../Links/qqch_side_left1.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	height: 1600px;
+}
+#quelque-chose-comme .back-image:last-of-type{
+	background-image: url("../Links/qqch_side_right1.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	height: 1600px;
+}
+#quelque-chose-comme .third-col:nth-of-type(2){
+	background-color: #fff;
+}
+.subtitle{
+	font-size: 1.25em;
+}
+#quelque-chose-comme .article-text{
+	padding: 20px; /* smaller margins on article text, normally 40px */
+}
+#quelque-chose-comme .content-wrapper{
+	background-image: url("../Links/qqch_side_left1.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+#quelque-chose-comme .forme{
+	width: 30px;
+}
+#quelque-chose-comme .anim{
+	height: 100vh;
+	width: 100%;
+}
+#quelque-chose-comme .credits{
+	color: #fff;
+}
+
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+	#quelque-chose-comme .title h1{
+	font-size: 7.25em;
+}
+}

@@ -1,0 +1,78 @@
+/* CSS Document */
+/* Styles - Article 13 */
+#nevrose{
+	background-color: #000;
+}
+#nevrose p, #nevrose h1{
+	color: #fff;
+}
+#nevrose .hero{
+	height: 100vh;
+	background-color:#9F9F9D;
+}
+#nevrose .hero-split{
+	height: inherit;
+	width: 100%;
+	background-image: url("../Links/nevrose_bg1.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: 400%;
+}
+#nevrose .hero-split:first-of-type{
+	background-position: calc(35% + 10vh);
+}
+#nevrose .hero-split:nth-of-type(2){
+	background-image: url("../Links/nevrose_bg_upsidedown.jpg");
+	background-position: calc(95% + 20vh);
+}
+#nevrose .hero-split:nth-of-type(3){
+	background-image: url("../Links/nevrose_bg_horizontal.jpg");
+	background-size: cover;
+	background-position: calc(115% + 20vh);
+}
+#nevrose .hero-split:nth-of-type(4){
+	background-image: url("../Links/nevrose_bg_horizontal.jpg");
+	background-size: 550%;
+	background-position: calc(-10% - 20vh);
+}
+#nevrose .hero-split:nth-of-type(5){
+	background-image: url("../Links/nevrose_bg_horizontal.jpg");
+	background-size: cover;
+	background-position: calc(45% + 20vh) -15vh;
+}
+#nevrose .hero-split:last-of-type{
+	background-image: url("../Links/nevrose_bg_horizontal.jpg");
+	background-size: cover;
+	background-position: calc(60% - 10vh);
+}
+#nevrose .article-text{
+	max-width: 900px;
+}
+#nevrose .over-img{
+	height: inherit;
+	left: 50%;
+	top: 1500px;
+}
+#nevrose .over-img img{
+	display: block;
+	width: 50px;
+	height: 200px;
+	top: 0px;
+	margin-left: -25px;
+}
+#nevrose .anim{
+	flex-basis: 66.66%;
+	margin: 0px 40px;
+}
+#nevrose .anim-wrapper .col-small{
+	position: relative;
+}
+#nevrose .anim-wrapper .col-small:first-child .forme{
+	position: absolute;
+	bottom: 0px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

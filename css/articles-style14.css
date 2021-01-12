@@ -1,0 +1,83 @@
+/* CSS Document */
+/* Styles - Article 14 */
+#manifeste-pour-un-art-virus .title-wrapper{
+	background-image: url("../Links/artvirus_bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#manifeste-pour-un-art-virus {
+	background-color: #000;
+}
+#manifeste-pour-un-art-virus p, #manifeste-pour-un-art-virus h1{
+	color: #fff;
+}
+#manifeste-pour-un-art-virus #pos-tweak1{
+	position: absolute;
+	bottom: 25px;
+}
+#manifeste-pour-un-art-virus .title-wrapper{
+	position: relative;
+	height: calc(100vh - 25px);
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+#manifeste-pour-un-art-virus .title .img-box{
+	position: absolute;
+	width: 45%;
+	top: 20%;
+	right: -5%;
+}
+#manifeste-pour-un-art-virus .credits{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: inherit;
+}
+#manifeste-pour-un-art-virus .credits > *{
+	
+}
+#manifeste-pour-un-art-virus .title-wrapper .row{
+	height: inherit;
+}
+#manifeste-pour-un-art-virus blockquote{
+	text-transform: uppercase;
+}
+#manifeste-pour-un-art-virus .intro{
+	padding: 40px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+#manifeste-pour-un-art-virus .forme{
+	width: 50px;
+}
+.subtitle-big{
+	font-size: 2em;
+}
+.bullet{
+	position: absolute;
+	left: 18px;
+}
+#manifeste-pour-un-art-virus .text-container .article-text{
+	max-width: 600px;
+}
+#manifeste-pour-un-art-virus .text-container .img-box .forme{
+	width: 105%;
+}
+#manifeste-pour-un-art-virus .full-col .img-box img{
+	width: calc(100% - 40px);
+	margin: 0px 40px;
+	box-sizing: border-box;
+}
+#manifeste-pour-un-art-virus .special .quote{
+	padding:  0px 40px;
+}
+#manifeste-pour-un-art-virus .special{
+	margin-top:  40px;
+	padding: 60px;
+	box-sizing: border-box;
+}
+/* ----- MEDIA QUERIES ----- */
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

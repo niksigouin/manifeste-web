@@ -343,3 +343,7 @@ blockquote {
 .img-box .mini-forme{
 	width: 120px;
 }
+/* added jan11, 9pm */
+.subtitle{
+	font-size: 1.2em;
+}

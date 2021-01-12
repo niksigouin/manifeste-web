@@ -1,0 +1,60 @@
+/* CSS Document */
+/* Styles - Article 15 */
+#matiere-grise{
+	background-color: #2D2A26;
+}
+#matiere-grise h1, #matiere-grise p{
+	color: #fff;
+}
+#matiere-grise .title-wrapper{
+	height: calc(100vh - 80px);
+	margin: 40px;
+	background-image: url("../Links/matieregrise_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#matiere-grise .credits > *{
+	width: 180px;
+	margin: 0 auto;
+}
+#matiere-grise blockquote{
+	text-transform: uppercase;
+	max-width: 900px;
+	padding: 40px;
+	margin: 0 auto;
+}
+#matiere-grise .text-container{
+	max-width: 1000px;
+}
+#matiere-grise .anim{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#matiere-grise .forme{
+	width: 50px;
+}
+#matiere-grise .anim > *{
+	margin-left: -20px; /* for the shapes to interlock */
+	margin-right: -20px;
+}
+#matiere-grise .anim img{
+	display: inline-block;
+}
+#matiere-grise .content-image{
+	width: 66.66%;
+	margin: 0 auto;
+}
+#matiere-grise .credits-wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+/* ----- MEDIA QUERIES ----- */
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

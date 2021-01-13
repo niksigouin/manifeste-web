@@ -43,12 +43,6 @@ h1 {
   line-height: 1em;
   padding-bottom: 16px;
 }
-#fatum .intro {
-  min-height: 600px;
-}
-#fatum .intro > * {
-  min-height: inherit;
-}
 blockquote {
   margin: 0;
   color: #fff;
@@ -83,9 +77,6 @@ blockquote {
   align-items: center;
   justify-content: center;
   flex-direction: row !important;
-}
-#fatum .hero {
-  background-image: url("../Links/fatum-bg.jpg");
 }
 .hero .forme {
   flex-basis: 60%;
@@ -142,26 +133,6 @@ blockquote {
 	padding-right: 40px;
 	box-sizing: border-box;
 }
-#au-travers-de-ta-fenetre .title{
-	height: 230px;
-	z-index: 10;
-	position: relative;
-	width: 100%;
-}
-#au-travers-de-ta-fenetre #pos-tweak1{
-	position: absolute;
-	right: 5%;
-	top: 32px;
-}
-#au-travers-de-ta-fenetre #pos-tweak2{
-	position: absolute;
-	right: 5%;
-	margin-top: 46%;
-	/* top: calc(100vh - 340px); */
-}
-#au-travers-de-ta-fenetre .hero{
-	margin-bottom: 100px;
-}
 .full-col{
 	flex: 1;
 }
@@ -183,41 +154,8 @@ blockquote {
 .over-img{
 	position: absolute;
 }
-#au-travers-de-ta-fenetre .over-img:first-of-type{
-	left: -15%;
-	top: 250px;
-}
-#au-travers-de-ta-fenetre .over-img:last-of-type{
-	right: -22%;
-	bottom: 100px;
-}
 .image-fill{
 	width: 100%;
-}
-#ton-corps{
-	background-color: #000;
-}
-#ton-corps .title{
-	color: #A9ADAE;
-	z-index: 10;
-}
-#ton-corps p{
-	color: #fff;
-}
-#ton-corps .hero{
-	padding: 40px;
-}
-#ton-corps #pos-tweak1{
-    position: absolute;
-    right: -110%;
-	top: calc(100vh - 140px); /* anchored in bottom right corner */
-}
-#ton-corps .intro{
-    flex-direction: row;
-    position: relative;
-}
-#ton-corps .half-col{
-	justify-content: flex-start;
 }
 .half-col .col-small{
 	width: 33%; /* 1/6th width */

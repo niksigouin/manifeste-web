@@ -47,6 +47,10 @@ header h2{
 	font-size: 1.8em;
 	padding: 20px;
 }
+header .row img.title-manifeste{
+	height: 50px;
+	padding: 10px 0;
+}
 
 /* SOUS-MENU */
 .nav-head nav a.main-btn:hover ~ ul.sub-nav{
@@ -120,11 +124,11 @@ header h2{
 	margin-left: -50%; /* offset for centering */
 }
 #homepage .formes-container a img{
-	transition: transform 2s ease;
+	transition: transform 1s ease;
 }
 #homepage .formes-container a:hover img{
-	transition: transform 4s ease;
-	transform: rotate3d(0,1,0,180deg);
+	transition: transform 2s ease;
+	transform: rotate3d(0,1,0,60deg);
 }
 
 /* SHAPE SIZE TWEAKING */
@@ -154,6 +158,20 @@ header h2{
 .article-preview{
 	margin: 20px;
 }
+.article-preview img.filter{
+	transition: all .5s ease;
+}
+.article-preview:hover img.filter{
+	filter: invert(100%);
+	transition: all .5s ease;
+}
+.article-preview h5{
+	transition: all .5s ease;
+}
+.article-preview:hover h5{
+	color: #EA5F0B;
+	transition: all .5s ease;
+}
 .article-preview .headline{
 	border-bottom: 2px solid #000;
 }
@@ -176,6 +194,36 @@ header h2{
 	right: 0px;
 }
 
+/* ANIMATIONS DES ARTICLES (LÉVITATION ET SURVOL) */
+.verite .article-preview,
+.interdit .article-preview,
+.univers-a-renouveau .article-preview{
+	transition: all 1s ease;
+}
+.verite .article-preview:hover,
+.interdit .article-preview:hover,
+.univers-a-renouveau .article-preview:hover{
+	transform: translateY(-20px);
+	transition: all 1s ease;
+}
+
+.entre-les-doigts .article-preview{
+	animation: levitation 4s linear infinite;
+}
+.entre-les-doigts .article-preview:hover{
+	animation-duration: 2s;
+}
+@keyframes levitation {
+	0% {
+		transform: translateY(20px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
+}
 
 /* VÉRITÉS */
 
@@ -393,11 +441,12 @@ b {
 	position: relative;
 }
 .manifeste img.forme-bg{
-	height: 100%;
+	height: 80vh;
 	margin: 0 auto;
 	position: absolute;
-	right: 0;
-	left: 0;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
 }
 #manifeste-type{
 	position: absolute;
@@ -408,9 +457,10 @@ b {
 	left: 50%;
 	margin-left: -40%;
 }
-.manifeste .forme-bg-default{
+.manifeste img.forme-bg-default{
 	transition: all .5s ease;
 	opacity: 1;
+	/* height: 100vh; */
 }
 .manifeste .forme-bg-1, .manifeste .forme-bg-2, .manifeste .forme-bg-3, .manifeste .forme-bg-4{
 	transition: all .5s ease;

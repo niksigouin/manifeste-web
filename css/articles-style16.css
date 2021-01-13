@@ -1,0 +1,106 @@
+/* CSS Document */
+/* Styles - Article 16 */
+
+#peluches-moutonnees-boutonnees {
+	background-color: #A9ADAE;
+}
+#peluches-moutonnees-boutonnees p, #peluches-moutonnees-boutonnees h1 {
+	color: #fff;
+}
+
+#peluches-moutonnees-boutonnees .vertical-text .title{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+	/* background-color: blue; */
+    width: 100%;
+    transform: rotate(180deg);
+	margin-left: 40px;
+}
+#peluches-moutonnees-boutonnees .vertical-text{
+	/* background-color: red; */
+	overflow: hidden;
+	height: 150vh;
+}
+#peluches-moutonnees-boutonnees .title h1{
+	line-height: 1em;
+}
+#peluches-moutonnees-boutonnees .text-container.special .half-col{
+	display: flex;
+	z-index: 10;
+}
+#peluches-moutonnees-boutonnees .nom, #peluches-moutonnees-boutonnees .article-text .img-box{
+	flex-basis: 33.33%;
+}
+#peluches-moutonnees-boutonnees .article-text .img-box{
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+#peluches-moutonnees-boutonnees p{
+	flex-basis: 66.66%;
+}
+#peluches-moutonnees-boutonnees .nom{
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 5%;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+#peluches-moutonnees-boutonnees .float{
+	position: absolute;
+	bottom: 420px;
+	width: 30%;
+	left: 42%;
+}
+#peluches-moutonnees-boutonnees .relative{
+	position: relative;
+}
+#peluches-moutonnees-boutonnees h2{
+	font-family: acumin-pro, sans-serif;
+  text-transform: uppercase;
+  font-size: 8em;
+  font-weight: 400;
+	line-height: 0.8em;
+}
+#peluches-moutonnees-boutonnees .anim-wrapper{
+	position: relative;
+	height: 80vh;
+	width: 100%;
+}
+
+#peluches-moutonnees-boutonnees .anim h2{
+	position: absolute;
+}
+#peluches-moutonnees-boutonnees .anim h2:first-of-type{
+	left: 0px;
+	top: 0vh;
+}
+#peluches-moutonnees-boutonnees .anim h2:nth-of-type(2){
+	left: 20%;
+	top: 20vh;
+}
+#peluches-moutonnees-boutonnees .anim h2:nth-of-type(3){
+	right: 20%;
+	top: 40vh;
+}
+#peluches-moutonnees-boutonnees .anim h2:last-of-type{
+	right: 0px;
+	top: 60vh;
+}
+#peluches-moutonnees-boutonnees .mini-forme{
+	width: 50px;
+}
+#peluches-moutonnees-boutonnees .fleche{
+	width: 80px;
+	margin: 0 20px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- smaller than 1025px ----------- */
+@media screen and (max-width: 1025px) {
+	h1{
+		font-size: 7.8em;
+	}
+}

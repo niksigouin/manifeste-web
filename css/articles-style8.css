@@ -1,154 +1,4 @@
 /* CSS Document */
-/* DEFAULT STYLES */
-body {
-  margin: 0;
-}
-p, h1, h2, h3, h4, h5 {
-  margin: 0;
-}
-img {
-  display: block;
-}
-p, blockquote {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-}
-h1 {
-  font-family: "Neue World", serif;
-  text-transform: uppercase;
-  font-size: 10em;
-  font-weight: 400;
-	line-height: 0.8em;
-}
-h2 {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.55em;
-  color: #fff;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.column {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.row-special {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-top: 60px;
-}
-.half-col {
-  flex-basis: 50%;
-}
-.col-small {
-  flex-basis: 16.65%;
-}
-.credits p {
-  text-transform: uppercase;
-  font-family: "Neue World", serif;
-  font-size: 1.3em;
-}
-.credits .author, .credits .visuals-by {
-  font-family: acumin-pro, sans-serif;
-  line-height: 1em;
-  padding-bottom: 16px;
-}
-#fatum .intro {
-  min-height: 600px;
-}
-#fatum .intro > * {
-  min-height: inherit;
-}
-blockquote {
-  margin: 0;
-  color: #fff;
-  font-size: 2.2em;
-  font-weight: 300;
-  line-height: 1.3em;
-}
-.quote {
-  position: relative;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* TITLE AND HERO */
-.title {
-  /* background-color: aquamarine; */
-	margin-top: 40px;
-	padding-left: 20px;
-}
-.credits {
-  /* background-color: cornflowerblue; */
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.hero {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row !important;
-}
-#fatum .hero {
-  background-image: url("../Links/fatum-bg.jpg");
-}
-.hero .forme {
-  flex-basis: 60%;
-}
-.half-col {
-  flex-basis: 50%;
-  position: relative;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-}
-.v-centered {
-  flex-direction: column;
-}
-.v-centered .img-box{
-	align-items: center;
-  justify-content: center;
-}
-.img-box {
-  flex: 1;
-  position: relative;
-
-	align-items:flex-start;
-  justify-content: left; /* center horizontally */
-  display: flex;
-  height: 8em;
-}
-.img-box img {
-  width: 8em;
-  padding-top: 50px;
-}
-/* TEXT STYLE CLASSES */
-.centered {
-  text-align: center;
-}
-.serif {
-  font-family: "Neue World", serif;
-}
-.sans-serif{
-	font-family: acumin-pro, sans-serif;
-}
-.title .sans-serif{
-	font-weight: 300;
-}
 #leo .article-text {
   padding-top: 40px;
   box-sizing: border-box;
@@ -160,124 +10,13 @@ blockquote {
   max-height: 628px;
   alignment-baseline: bottom;
 }
-.col-large{
-	flex-basis: 83.35%;
-}
-.col-large img{
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 40px;
-	box-sizing: border-box;
-}
-#au-travers-de-ta-fenetre .title{
-	height: 230px;
-	z-index: 10;
-	position: relative;
-	width: 100%;
-}
-#au-travers-de-ta-fenetre #pos-tweak1{
-	position: absolute;
-	right: 5%;
-	top: 32px;
-}
-#au-travers-de-ta-fenetre #pos-tweak2{
-	position: absolute;
-	right: 5%;
-	margin-top: 46%;
-	/* top: calc(100vh - 340px); */
-}
-#au-travers-de-ta-fenetre .hero{
-	margin-bottom: 100px;
-}
-.full-col{
-	flex: 1;
-}
-/* thin intro */
-.thin{
-	min-height: inherit; /* cancel min-width given by intro */
-}
-.thin blockquote{
-	padding: 40px 10%;
-}
-.justified p:not(.serif){
-	text-align: justify;
-}
-.text-container{
-	max-width: 1280px; /* was 1000px */
-	margin: 0 auto;
-	position: relative;
-	alignment-baseline: bottom;
-}
+
 .text-container-leo{
 	max-width: 1280px; /* was 1000px */
 	margin: 0 auto;
 	padding: 40px;
 	position: relative;
 	alignment-baseline: bottom;
-}
-.over-img{
-	position: absolute;
-}
-#au-travers-de-ta-fenetre .over-img:first-of-type{
-	left: -15%;
-	top: 250px;
-}
-#au-travers-de-ta-fenetre .over-img:last-of-type{
-	right: -22%;
-	bottom: 100px;
-}
-.image-fill{
-	width: 100%;
-}
-#ton-corps{
-	background-color: #000;
-}
-#ton-corps .title{
-	color: #A9ADAE;
-	z-index: 10;
-}
-#ton-corps p{
-	color: #fff;
-}
-#ton-corps .hero{
-	padding: 40px;
-}
-#ton-corps #pos-tweak1{
-    position: absolute;
-    right: -110%;
-	top: calc(100vh - 140px); /* anchored in bottom right corner */
-}
-#ton-corps .intro{
-    flex-direction: row;
-    position: relative;
-}
-#ton-corps .half-col{
-	justify-content: flex-start;
-}
-.half-col .col-small{
-	width: 33%; /* 1/6th width */
-}
-.fleche{
-	width: 50px;
-	margin: 100px auto;
-}
-.symbole-anime{
-	height: 200px;
-}
-.img-box{
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-}
-.right-aligned{
-	text-align: right;
-}
-.text-split > *{
-	display: inline-block;
-}
-.text-split{
-	display: flex;
-	justify-content: space-between;
 }
 #leo .title-wrapper{
 	position: relative;
@@ -286,8 +25,15 @@ blockquote {
 #leo .float{
 	position: absolute;
 	top: 0px;
-	width: 100%;
+	width: calc(100% - 40px);
 }
+#leo .title{
+	width: 300px;
+	margin-left: -150px;
+	left: 50%;
+	position: absolute;
+}
+
 #leo #pos-tweak1, #leo #pos-tweak3{
 	position: absolute;
 	right: 40px;
@@ -302,83 +48,31 @@ blockquote {
 	left: 0px;
 	position: absolute;
 }
-.back-image img{
-	display: block;
-	width: 100%;
-}
 #leo{
     background-color: #1D1C19;
 }
 #leo p, #leo h1{
 	color: #fff;
 }
-.third-col {
-  flex-basis: 33.33%;
-	padding: 20px; /* overrides the 40px from .article-text */
-}
-#defaire-le-lit .vertical-text .title{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    min-height: 1120px;
-    width: 100%;
-    transform: rotate(180deg);
-	margin-left: 40px;
-}
-#defaire-le-lit .vertical-text{
-	background-color: #A9ADAE;
-}
-#defaire-le-lit{
-	background-color: #000;
-}
-#defaire-le-lit p{
-	color: #A9ADAE;
-}
-.medium-text{
-	font-family: acumin-pro, sans-serif;
-	font-size: 2em;
-	font-weight: 300;
-	padding: 40px;
-}
-.medium-text.serif{
-	color: #A9ADAE;
-	font-family: "Neue World", serif;
-	font-size: 2.4em;
-}
-#defaire-le-lit .anim{
-	height: 100vh;
-	border: solid 2px green;
-	justify-content: space-around;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-}
-#defaire-le-lit .anim .v-centered{
-	position: absolute;
-}
-#defaire-le-lit .anim .img-box{
-	margin-left: 2.75%;
-	height: inherit;
-	border: 2px solid red;
-}
-.img-box.no-margins img{
-	margin: 0;
-	padding: 0;
-}
-.no-margins {
-	margin: 0;
-	padding: 0;
-}
-.col-large .half-col{
-	flex-basis: 66.66%;
-}
-.col-large .third-col{
-	flex-basis: 33.33%;
-}
-.img-box .mini-forme{
-	width: 120px;
-}
 #leo .text-container-special1 {
   max-width: 1280px; 
   margin-top: 55px;
   position: relative;
+}
+#leo .medium-text{
+	padding: 20px;
+	margin-top: 20px;
+}
+#leo .title .img-box img{
+	width: 120px;
+}
+#leo .title img{
+	display: block;
+}
+#leo .title .img-box{
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	width: 30%;
+	margin-bottom: 10px;
 }

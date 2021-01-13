@@ -7,6 +7,7 @@ header h2{
 	font-family: Neue World, serif;
 	font-size: 1.8em;
 	padding: 20px;
+	flex-basis: 20%;
 }
 header{
 	border-bottom: 1px solid #000;
@@ -26,14 +27,15 @@ header .img-box{
 	flex-direction: row;
 	justify-content: flex-end;
 }
-header h2{
-	flex-basis: 20%;
-}
 header .row{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img.title-manifeste{
+	height: 35px;
+	padding: 15px 10px;
 }
 main{
-	margin-top: 90px;
+	padding-top: 70px;
 }

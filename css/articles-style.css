@@ -347,3 +347,22 @@ blockquote {
 .subtitle{
 	font-size: 1.2em;
 }
+/* added jan13, 1am */
+#ton-corps .symbole-anime{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+}
+#ton-corps .fleche{
+	padding-top: 0px;
+	animation-name: bounce-vertical;
+  	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+}
+@keyframes bounce-vertical {
+  0%   {padding-top: 0px;}
+  50%  {padding-top: 50px;}
+  100%  {padding-top: 0px;}
+}

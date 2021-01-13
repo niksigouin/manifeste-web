@@ -5,7 +5,10 @@
 <title>Accueil - Manifeste</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.typekit.net/wig2gqu.css"> <!-- Acumin-->
-	<script src="js/script.js"></script>
+
+	<!-- Scripts et jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -15,36 +18,46 @@
 	<div class="row">
 	<h2>Manifeste</h2>
 	<nav>
-    <img id="nav-forme" src="Links/svg/nav-manif.svg" alt=""/>
+		<div id="nav-forme">
+			<a class="main-btn smooth-anchor" href="#homepage"><img src="Links/svg/nav-manif.svg" alt=""/></a>
+			<ul class="sub-nav">
+				<li><a href="#verite" class="smooth-anchor"><img src="Links/svg/nav-verite.svg" alt=""></a></li>
+				<li><a href="#doigts" class="smooth-anchor"><img src="Links/svg/nav-entrelesdoigts.svg" alt=""></a></li>
+				<li><a href="#interdit" class="smooth-anchor"><img src="Links/svg/nav-interdit.svg" alt=""></a></li>
+				<li><a href="#univers" class="smooth-anchor"><img src="Links/svg/nav-universarenouveau.svg" alt=""></a></li>
+				<li><a href="#manifeste" class="smooth-anchor"><img src="Links/svg/nav-manif.svg" alt=""></a></li>
+			</ul>
+		</div>
 	</nav>
 		</div>
 </header>
 <main id="homepage">
 	<section class="hero">
-<section class="formes-container">
-	<div class="forme-box"><img src="Links/VERITE.png" alt=""/></div>
-	<div class="forme-box"><img src="Links/ENTRE_LES_DOIGTS.png" alt=""/></div>
-	<div class="forme-box"><img src="Links/INTERDIT.png" alt=""/></div>
-	<div class="forme-box"><img src="Links/UNIVERS_A_RENOUVEAU.png" alt=""/></div>
-	<div class="forme-box"><img src="Links/MANIFESTE.png" alt=""/></div>
+<section class="formes-container animation-fadeIn">
+	<div class="forme-box"><a href="#verite" class="smooth-anchor"><img src="Links/VERITE.png" alt=""/></a></div>
+	<div class="forme-box"><a href="#doigts" class="smooth-anchor"><img src="Links/ENTRE_LES_DOIGTS.png" alt=""/></a></div>
+	<div class="forme-box"><a href="#interdit" class="smooth-anchor"><img src="Links/INTERDIT.png" alt=""/></a></div>
+	<div class="forme-box"><a href="#univers" class="smooth-anchor"><img src="Links/UNIVERS_A_RENOUVEAU.png" alt=""/></a></div>
+	<div class="forme-box"><a href="#manifeste" class="smooth-anchor"><img src="Links/MANIFESTE.png" alt=""/></a></div>
 	</section>
 </section> <!-- end of HERO -->
 	
-	<section class="verite">
+	<section id="verite" class="verite">
 	<header>
 		<div class="row">
 		<div class="forme-box">
 			<img src="Links/VERITE_h.png" alt=""/>
 		</div>
-		<h4>Il y a les <br> 
+			
+		<h4>Il y a les <br>
 			<span>vérités statiques <br></span>
 			<span>de l'existence</span>
 		</h4>
-			</div>
+		</div>
 		</header>
 	<section class="article-gallery">
 	<div class="row">
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Fatum</h5>
@@ -56,7 +69,7 @@
 			</section>
 		</div> <!-- end of article preview 1 -->
 		
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Au travers de ta fenêtre</h5>
@@ -68,7 +81,7 @@
 				</section>
 		</div> <!-- end of article preview 2 -->
 		
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5><s>Ton</s> corps</h5>
@@ -80,7 +93,7 @@
 				</section>
 		</div> <!-- end of article preview 3 -->
 		
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>La Mort Éclot Toujours sans douleur</h5>
@@ -94,24 +107,24 @@
 			
 	</div>
 	</section><!-- end of article-gallery -->
-		</section> <!-- end of VERITE -->
+	</section> <!-- end of VERITE -->
 	
-	<section class="entre-les-doigts">
+	<section id="doigts" class="entre-les-doigts">
 		<section class="banner">
 		</section>
 		
-		<header class="looping-text">
-			<div class="row">
-			<h4>Et celles qui nous glissent entre les doigts</h4>
-				</div>
-				</header>
+		<div class="row row-looping-text">
+			<header class="looping-text">
+				<h4>Et celles qui nous glissent entre les doigts</h4>
+			</header>
+		</div>
 		
 		
 		<!-- ARTICLES - ENTRE LES DOIGTS -->
 		<section class="article-gallery">
 	<div class="row">
 		<div class="column"> <!-- column 1 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Tricher aux échecs</h5>
@@ -124,7 +137,7 @@
 			</section>
 		</div> <!-- end of article preview 1 -->
 			
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Léo</h5>
@@ -139,7 +152,7 @@
 		</div> <!-- end of column 1 -->
 		
 		<div class="column"> <!-- column 2 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Bribes</h5>
@@ -153,7 +166,7 @@
 		</div> <!-- end of column 2 -->
 		
 		<div class="column"> <!-- column 3 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Sub-Conscient</h5>
@@ -167,7 +180,7 @@
 		</div> <!-- end of column 3 -->
 		
 		<div class="column"> <!-- column 4 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Dieffenbachia</h5>
@@ -184,7 +197,7 @@
 	</section>
 	</section> <!-- end of ENTRE LES DOIGTS -->
 	
-	<section class="interdit">
+	<section id="interdit" class="interdit">
 		<section class="banner">
 		</section>
 		
@@ -203,7 +216,7 @@
 		<section class="article-gallery">
 	<div class="row">
 		<div class="column"> <!-- column 1 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Défaire le lit</h5>
@@ -220,7 +233,7 @@
 		</div> <!-- end of column 2 -->
 		
 		<div class="column"> <!-- column 3 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Quelque chose comme 10 sur l'échelle de Richter</h5>
@@ -234,7 +247,7 @@
 		</div> <!-- end of column 3 -->
 		
 		<div class="column"> <!-- column 4 -->
-		<div class="article-preview">
+		<div class="article-preview animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>À dieu vit!</h5>
@@ -252,19 +265,19 @@
 		
 	</section>
 	
-	<section class="univers-a-renouveau">
-		<header class="looping-text">
-			<div class="row">
-			<h4>Genèse entropique: l'univers à nouveau.</h4>
-				</div>
-				</header>
+	<section id="univers" class="univers-a-renouveau">
+		<div class="row row-looping-text">
+			<header class="looping-text">
+				<h4>Genèse entropique: l'univers à nouveau.</h4>
+			</header>
+		</div>
 		
 		<section class="banner">
 		</section>
 		
 		<section class="article-gallery">
 	<div class="row">
-		<div class="article-preview">
+		<div class="article-preview  animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Manifeste pour un art-virus</h5>
@@ -276,7 +289,7 @@
 			</section>
 		</div> <!-- end of article preview 1 -->
 		
-		<div class="article-preview">
+		<div class="article-preview  animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Peluches moutonnées boutonnées</h5>
@@ -288,7 +301,7 @@
 				</section>
 		</div> <!-- end of article preview 2 -->
 		
-		<div class="article-preview">
+		<div class="article-preview  animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Matière grise</h5>
@@ -299,7 +312,7 @@
 				</section>
 		</div> <!-- end of article preview 3 -->
 		
-		<div class="article-preview">
+		<div class="article-preview  animation-fadeIn">
 	    <img src="Links/fatum.png" alt=""/>
 			<div class="headline">
 			<h5>Névrose</h5>
@@ -316,9 +329,20 @@
 		
 			</section><!-- end of UNIVERS À RENOUVEAU -->
 	
-	<section class="manifeste">
-    <img src="Links/MANIFESTE.png" alt=""/>
-	<img id="manifeste-type" src="Links/manifeste_.png" alt=""/> </section>
+	<section id="manifeste" class="manifeste">
+		
+		<div class="icon icon-1"><img src="Links/svg/nav-verite.svg" alt=""></div>
+		<div class="icon icon-2"><img src="Links/svg/nav-entrelesdoigts.svg" alt=""></div>
+		<div class="icon icon-3"><img src="Links/svg/nav-interdit.svg" alt=""></div>
+		<div class="icon icon-4"><img src="Links/svg/nav-universarenouveau.svg" alt=""></div>
+	
+		<img class="forme-bg forme-bg-default" src="Links/MANIFESTE.png" alt=""/>
+		<img class="forme-bg forme-bg-1" src="Links/ENTRE_LES_DOIGTS.png" alt=""/>
+		<img class="forme-bg forme-bg-2" src="Links/INTERDIT.png" alt=""/>
+		<img class="forme-bg forme-bg-3" src="Links/UNIVERS_A_RENOUVEAU.png" alt=""/>
+		<img class="forme-bg forme-bg-4" src="Links/VERITE.png" alt=""/>
+		
+		<img id="manifeste-type" src="Links/manifeste_.png" alt=""/> </section>
 	
 	
 	</main>

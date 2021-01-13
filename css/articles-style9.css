@@ -14,13 +14,24 @@ p, blockquote {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  color: #fff;
 }
 h1 {
   font-family: "Neue World", serif;
   text-transform: uppercase;
   font-size: 10em;
   font-weight: 400;
-	line-height: 0.8em;
+  line-height: 0.8em;
+  color: #fff;
+}
+#sub-conscient-intrusif h2 {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+#sub-conscient-intrusif h2{
+	color: #fff;
 }
 .row {
   display: flex;
@@ -314,13 +325,30 @@ blockquote {
 	width: 120px;
 }
 /*Léo article 7*/
-#dieffen-bacha .text-container-special1 {
+#sub-conscient-intrusif .text-container-special1 {
   max-width: 1280px; 
-  margin-top: -207px;
+  margin-top: 55px;
   position: relative;
 }
-#dieffen-bacha .text-container-special2 {
+#sub-conscient-intrusif .text-container-special2 {
   max-width: 1280px; 
-  margin-top: -35px;
+  margin-top: 30px;
   position: relative;
+}
+#sub-conscient-intrusif{
+	background-color: #A9ADAE;
+}
+#sub-conscient-intrusif .col-medium{
+	flex-basis: 66.66%;
+}
+#sub-conscient-intrusif .col-medium-small{
+	flex-basis: 33.33%;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+#sub-conscient-intrusif .col-medium-small-special{
+	flex-basis: 33.33%;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }

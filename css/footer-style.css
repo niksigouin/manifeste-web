@@ -1,0 +1,79 @@
+/* CSS Document */
+/* Styles - Footer */
+
+footer .fleche{
+	height: 30px;
+	width: 80px;
+	margin: 0px 10px;
+	transition: all 0.2s ease;
+}
+footer nav:first-of-type section{
+	padding: 20px;
+}
+footer nav:first-of-type section:hover{
+	cursor: pointer;
+}
+footer nav:first-of-type section:hover .fleche{
+	margin: 0px;
+	transition: all 0.2s ease;
+}
+footer nav:first-of-type section:hover p{
+	/* color: #FF6333; */
+	transition: all 0.2s ease;
+}
+footer p{
+	line-height: 1.2em;
+	margin: 0 10px;
+	font-size: 1.5em;
+}
+footer ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+footer ul li{
+	font-family: acumin-pro;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	line-height: 1em;
+	margin: 10px 0px;
+	transition: all 0.2s ease;
+}
+footer {
+	background-color: #DBDBDB;
+	border-top: 1px solid #000;
+	margin-top: 60px;
+}
+footer nav{
+	padding: 0px 3.8%;
+}
+footer nav:first-of-type{
+	border-bottom: 1px solid #000;
+}
+footer nav:last-of-type{
+	padding-top: 0px;
+}
+.quarter-col:not(:last-of-type){
+	flex-basis: 24%;
+}
+footer .quarter-col{
+	margin: 20px;
+}
+footer .forme{
+	width: 50px;
+}
+footer ul .img-box{
+	justify-content: flex-start;
+	flex-direction: row;
+	margin-left: -10px;
+}
+footer ul li:hover{
+	font-weight: 600;
+	margin-left: 2px;
+	transition: all 0.2s ease;
+}
+/* ----- MEDIA QUERIES ----- */
+/* ----------- smaller than 1025px ----------- */
+@media screen and (max-width: 1025px) {
+
+}

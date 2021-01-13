@@ -22,10 +22,22 @@ h1 {
   font-weight: 400;
 	line-height: 0.8em;
 }
+h2 {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.55em;
+  color: #fff;
+}
 .row {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .row-special {
   display: flex;
@@ -137,9 +149,16 @@ blockquote {
 .title .sans-serif{
 	font-weight: 300;
 }
-.article-text {
-  padding: 40px;
+#leo .article-text {
+  padding-top: 40px;
   box-sizing: border-box;
+  max-height: 628px;
+}
+#leo .article-text-bottom {
+  padding-top: 40px;
+  box-sizing: border-box;
+  max-height: 628px;
+  alignment-baseline: bottom;
 }
 .col-large{
 	flex-basis: 83.35%;
@@ -189,6 +208,13 @@ blockquote {
 	position: relative;
 	alignment-baseline: bottom;
 }
+.text-container-leo{
+	max-width: 1280px; /* was 1000px */
+	margin: 0 auto;
+	padding: 40px;
+	position: relative;
+	alignment-baseline: bottom;
+}
 .over-img{
 	position: absolute;
 }
@@ -233,7 +259,7 @@ blockquote {
 }
 .fleche{
 	width: 50px;
-	margin: 0px auto;
+	margin: 100px auto;
 }
 .symbole-anime{
 	height: 200px;

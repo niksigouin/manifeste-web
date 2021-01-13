@@ -1,0 +1,24 @@
+/* CSS Document */
+/* Styles - Article 5 */
+#tricher-aux-echecs .credits {
+	position: absolute;
+	width: 16.65%;
+	bottom: 40px;
+}
+#tricher-aux-echecs .title-wrapper{
+	position: relative;
+	height: 100vh;
+}
+#tricher-aux-echecs #pos-tweak1{
+	position: absolute;
+	bottom: 40px;
+	width: 500px;
+	margin-left: -250px;
+	
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

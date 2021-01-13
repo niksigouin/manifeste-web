@@ -48,8 +48,8 @@ header h2{
 	padding: 20px;
 }
 header .row img.title-manifeste{
-	height: 50px;
-	padding: 10px 0;
+	height: 35px;
+	padding: 15px 10px;
 }
 
 /* SOUS-MENU */
@@ -89,9 +89,15 @@ header .row img.title-manifeste{
 }
 
 
+#homepage{
+	margin-top: 80px; /* NEW */
+}
+
 /* HERO */
 
 #homepage .hero{
+	padding: 10vh 10% 20vh 10%; /* NEW - Jan 13*/
+	box-sizing: border-box;
 	height: 100vh;
 	min-height: 750px;
 	margin: 0;
@@ -106,6 +112,7 @@ header .row img.title-manifeste{
 	align-items: flex-start;
 	justify-content: space-between;
 	/* border: 4px solid yellow; */
+	padding: 40px;
 }
 /* boxes with shapes inside */
 #homepage .formes-container .forme-box{
@@ -127,8 +134,8 @@ header .row img.title-manifeste{
 	transition: transform 1s ease;
 }
 #homepage .formes-container a:hover img{
-	transition: transform 2s ease;
-	transform: rotate3d(0,1,0,60deg);
+	transition: transform 1.6s ease;
+	transform: rotate3d(0,1,-0.4,30deg);
 }
 
 /* SHAPE SIZE TWEAKING */
@@ -155,6 +162,10 @@ header .row img.title-manifeste{
 }
 
 /* general layout/style rules */
+.serif {
+  font-family: "Neue World", serif;
+}
+
 .article-preview{
 	margin: 20px;
 }
@@ -466,27 +477,33 @@ b {
 	transition: all .5s ease;
 	opacity: 0;
 }
-.manifeste .icon{
-	width: 70px;
+.manifeste .icon, .manifeste .icon-fill{
+	width: 50px;
 	position: absolute;
+	padding: 20px;
 }
 .manifeste .icon-1{
-	left: 20px;
-	top: 20px;
+	left: 0px;
+	top: 0px;
 }
 .manifeste .icon-2{
-	right: 20px;
-	top: 20px;
+	right: 0px;
+	top: 0px;
 }
 .manifeste .icon-3{
-	left: 20px;
-	bottom: 20px;
+	left: 0px;
+	bottom: 0px;
 }
 .manifeste .icon-4{
-	right: 20px;
-	bottom: 20px;
+	right: 0px;
+	bottom: 0px;
 }
+
 .manifeste .icon-1:hover ~ .forme-bg-1{
+	transition: all .5s ease;
+	opacity: 1;
+}
+.manifeste .icon-1:hover .icon-fill{
 	transition: all .5s ease;
 	opacity: 1;
 }
@@ -494,11 +511,23 @@ b {
 	transition: all .5s ease;
 	opacity: 1;
 }
+.manifeste .icon-2:hover .icon-fill{
+	transition: all .5s ease;
+	opacity: 1;
+}
 .manifeste .icon-3:hover ~ .forme-bg-3{
 	transition: all .5s ease;
 	opacity: 1;
 }
+.manifeste .icon-3:hover .icon-fill{
+	transition: all .5s ease;
+	opacity: 1;
+}
 .manifeste .icon-4:hover ~ .forme-bg-4{
+	transition: all .5s ease;
+	opacity: 1;
+}
+.manifeste .icon-4:hover .icon-fill{
 	transition: all .5s ease;
 	opacity: 1;
 }
@@ -509,6 +538,18 @@ b {
 .manifeste .icon-4:hover ~ .forme-bg-default{
 	transition: all .5s ease;
 	opacity: 0;
+}
+
+/* fill icons */
+.icon-fill{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	opacity: 0;
+}
+.icon:nth-of-type(2) .icon-fill{
+	top: 2px; /* correction décalage */
 }
 
 .nav-head .row{
@@ -526,7 +567,7 @@ b {
 	}
 	*/
   .formes-container {
-	  margin: 0px 8%;
+	  /* margin: 0px 8%; */
   }
 }
 /* ----------- larger than 1280px ----------- */
@@ -537,7 +578,7 @@ b {
 	}
 	*/
   .formes-container {
-	  max-width: 1280px;
+	  max-width: 1600px;
 	  margin: 0 auto;
   }
 	.looping-text h4{
@@ -570,6 +611,53 @@ body{
 .looping-text{
 	animation: title-animation 10s linear infinite;
 }
+
+/* NEW - formes animées avec le scroll */
+
+.row-forme > *{
+	z-index: 10;
+	display: block;
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.scroll-forme-1{
+	transform: rotate3d(0,0,-1, 40deg);
+	transition: all 1s ease;
+}
+.scroll-forme-1:hover{
+	transform: rotate3d(0.6,-0.8,-1.4, 60deg);
+	transition: all 1s ease;
+}
+.scroll-forme-2{
+	width: 350px;
+	top: 600px;
+	left: 200px;
+	transform: rotate3d(0,0,-1, -120deg);
+	transition: all 1s ease;
+}
+.scroll-forme-2:hover{
+	transform: rotate3d(0.2,-0.3,-1, -130deg);
+	transition: all 1s ease;
+}
+.scroll-forme-3{
+	width: 340px;
+	top: -100px;
+	left: 45%;
+	transform: rotate3d(0,0,1, 30deg);
+	transition: all 1s ease;
+}
+.scroll-forme-3:hover{
+	transform: rotate3d(-1.2,-0.6,2, 60deg);
+	transition: all 1s ease;
+}
+.row-forme{
+	max-width: 1280px;
+	width: 100%;
+	position: relative;
+}
+
 @keyframes title-animation {
 	from {
 		transform: translateX(100vw);

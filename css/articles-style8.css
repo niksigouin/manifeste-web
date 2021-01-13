@@ -2,12 +2,12 @@
 #leo .article-text {
   padding-top: 40px;
   box-sizing: border-box;
-  max-height: 628px;
+  /* max-height: 628px; */
 }
 #leo .article-text-bottom {
   padding-top: 40px;
   box-sizing: border-box;
-  max-height: 628px;
+  /* max-height: 628px; */
   alignment-baseline: bottom;
 }
 
@@ -61,7 +61,6 @@
 }
 #leo .medium-text{
 	padding: 20px;
-	margin-top: 20px;
 }
 #leo .title .img-box img{
 	width: 120px;
@@ -75,4 +74,35 @@
 	flex-direction: row;
 	width: 30%;
 	margin-bottom: 10px;
+}
+#leo .scroll-box{
+	margin-left: 10px;
+	height: calc(100vh - 340px);
+}
+#leo .scroll-box::-webkit-scrollbar{
+	width: 10px;
+	height: 30px;
+}
+/* Track */
+#leo .scroll-box::-webkit-scrollbar-track {
+  border-radius: 5px;
+	background-color: none;
+	box-shadow: none;
+}
+ 
+/* Handle */
+#leo .scroll-box::-webkit-scrollbar-thumb {
+  background: #EA5F0B; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#leo .scroll-box::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+#leo .half-col.scroll-box{
+	flex-basis: calc(50% + 15px);
+}
+#leo .scroll-container{
+    padding-top: 20px;
 }

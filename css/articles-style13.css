@@ -2,6 +2,7 @@
 /* Styles - Article 13 */
 #nevrose{
 	background-color: #000;
+	padding-top: 20px;
 }
 #nevrose p, #nevrose h1{
 	color: #fff;

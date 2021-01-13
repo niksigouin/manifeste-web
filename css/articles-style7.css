@@ -131,7 +131,9 @@ blockquote {
 	font-weight: 300;
 }
 .article-text {
-  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+	padding-top: 40px;
   box-sizing: border-box;
 }
 .col-large{

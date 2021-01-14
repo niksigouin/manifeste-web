@@ -1,4 +1,10 @@
 /* CSS Document */
+
+/* FONT */
+@font-face {
+	font-family: NeueWorld;
+	src: url(../fonts/NeueWorld-SemiExtendedLight.otf);
+ }
 /* DEFAULT STYLES */
 body {
   margin: 0;
@@ -29,7 +35,7 @@ p, blockquote {
   font-size: 16px;
 }
 h1 {
-  font-family: "Neue World", serif;
+  font-family: NeueWorld, serif;
   text-transform: uppercase;
   font-size: 10em;
   font-weight: 400;
@@ -49,7 +55,7 @@ h1 {
 }
 .credits p {
   text-transform: uppercase;
-  font-family: "Neue World", serif;
+  font-family: NeueWorld, serif;
   font-size: 1.3em;
 }
 .credits .author, .credits .visuals-by {
@@ -146,7 +152,7 @@ blockquote {
   text-align: center;
 }
 .serif {
-  font-family: "Neue World", serif;
+  font-family: NeueWorld, serif;
 }
 .sans-serif{
 	font-family: acumin-pro, sans-serif;
@@ -342,7 +348,7 @@ blockquote {
 }
 .medium-text.serif{
 	color: #A9ADAE;
-	font-family: "Neue World", serif;
+	font-family: NeueWorld, serif;
 	font-size: 2.4em;
 }
 #defaire-le-lit .anim{

@@ -434,11 +434,6 @@ blockquote {
   background: #EA5F0B; 
   border-radius: 10px;
 }
-
-/* Handle on hover */
-#fatum .scroll-box::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
 #fatum .half-col.scroll-box{
 	flex-basis: calc(50% + 15px);
 }

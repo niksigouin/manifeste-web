@@ -78,7 +78,7 @@
 #leo .scroll-box{
 	margin-left: 10px;
 	direction: ltr;
-	height: calc(100vh - 340px);
+	height: calc(120vh - 340px);
 }
 #leo .scroll-box::-webkit-scrollbar{
 	width: 10px;

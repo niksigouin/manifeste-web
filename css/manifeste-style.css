@@ -1,0 +1,43 @@
+/* CSS Document */
+/* Styles - Article 11 */
+
+video{
+	width:100%;
+	margin: 0px auto;
+	display: block;
+	max-width: 1920px;
+}
+.full-col video{
+	max-width: 1280px;
+	padding: 40px;
+}
+#manifeste{
+	background-color: #000;
+}
+.texte-manifeste em{
+	font-family: "Neue World", serif;
+	text-transform: none;
+	position: relative;
+	left: 600px; /* décalage (deux fois celui du texte) */
+}
+.texte-manifeste{
+	color: #FF6333;
+	text-transform: uppercase;
+	width: 400px;
+	margin-left: -200px;
+	position: absolute;
+	left: calc(50% - 300px); /* décalage ajuster le num de pixels selon scroll */
+}
+#manifeste .text-container{
+	min-height: 2000px;
+	position: relative;
+}
+
+#manifeste .row.centered{
+	align-items: center;
+	justify-content: center;
+}
+
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

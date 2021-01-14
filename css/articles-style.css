@@ -370,7 +370,7 @@ blockquote {
 	width: 100%;
 	z-index: 10;
 }
-#ton-corps .fleche{
+#ton-corps .fleche, #manifeste .fleche{
 	padding-top: 0px;
 	animation-name: bounce-vertical;
   	animation-duration: 2s;

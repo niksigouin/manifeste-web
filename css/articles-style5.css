@@ -1,23 +1,80 @@
 /* CSS Document */
 /* Styles - Article 5 */
 #tricher-aux-echecs .credits {
-	position: absolute;
-	width: 16.65%;
-	bottom: 40px;
+	width: 16.65%; 
+	position: relative;
+	top: 500px;
 }
 #tricher-aux-echecs .title-wrapper{
 	position: relative;
-	height: 100vh;
+	height: calc(100vh - 40px);
+	min-height: 900px;
+	overflow: hidden;
+	border-bottom: solid 40px #fff;
 }
 #tricher-aux-echecs #pos-tweak1{
 	position: absolute;
 	bottom: 40px;
 	width: 500px;
 	margin-left: -250px;
-	
 }
-
-
+.mot-orange{
+	color: #FF6333;
+}
+#tricher-aux-echecs .half-col .img-box{
+	padding: 40px;
+	height: inherit;
+}
+#tricher-aux-echecs .title-wrapper .half-col{
+	max-height: 100vh;
+}
+#tricher-aux-echecs .title{
+	z-index: 10;
+}
+#tricher-aux-echecs .text-container{
+	color: #fff;
+}
+#tricher-aux-echecs .separator{
+	background-color: #2D2A26;
+	width: 100%;
+}
+#tricher-aux-echecs .text-container .half-col{
+	display: flex;
+	z-index: 10;
+}
+#tricher-aux-echecs .nom{
+	flex-basis: 33.33%;
+}
+#tricher-aux-echecs .article-text .img-box{
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+#tricher-aux-echecs p{
+	flex-basis: 66.66%;
+}
+#tricher-aux-echecs .nom{
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 5%;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+#tricher-aux-echecs .right-aligned, #tricher-aux-echecs .centered{
+	display: block;
+}
+#tricher-aux-echecs .centered{
+	text-align: center;
+}
+#tricher-aux-echecs .special-text{
+	font-family: "Neue World", serif;
+	font-size: 3em;
+}
+#tricher-aux-echecs main{
+	padding-bottom: 0px;
+}
 /* ----- MEDIA QUERIES ----- */
 /* ----------- larger than 1280px ----------- */
 @media screen and (min-width: 1281px) {

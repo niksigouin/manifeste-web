@@ -21,14 +21,14 @@
 	flex-basis: 59%;
 }
 #quelque-chose-comme .back-image:first-of-type{
-	background-image: url("../Links/richter.gif"); /* left - richter1 */
+	background-image: url("../Links/richter-2.gif"); /* left - richter1 */
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
 	height: 1600px;
 }
 #quelque-chose-comme .back-image:last-of-type{
-	background-image: url("../Links/richter-2.gif"); /* right - richter2 */
+	background-image: url("../Links/richter-flip.gif"); /* right - richter2 */
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;

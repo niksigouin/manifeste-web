@@ -41,6 +41,7 @@ img{
 	left: 0;
 	width: 100%;
 	z-index: 20;
+	transition: all 0.25s ease;
 }
 
 header h2{
@@ -54,37 +55,43 @@ header .row img.title-manifeste{
 }
 
 /* SOUS-MENU */
-.nav-head nav a.main-btn:hover ~ ul.sub-nav{
-	visibility: visible;
-	opacity: 1;
-	transition: all ease .5s;
-}
-.nav-head nav ul.sub-nav:hover{
-	visibility: visible;
-	opacity: 1;
-	transition: all ease .5s;
-}
-.nav-head ul.sub-nav{
+.nav-head nav .burger{
 	width: 70px;
-	height: 0;
+	float: right;
+}
+.nav-head nav div.burger:hover ~ .sub-nav{
+	visibility: visible;
+	opacity: 1;
+	transition: all ease .5s;
+}
+.nav-head nav .sub-nav:hover{
+	visibility: visible;
+	opacity: 1;
+	transition: all ease .5s;
+}
+.nav-head nav .sub-nav{
 	position: relative;
-	top: 0px;
-	right: 0px;
-	margin: 0px auto;
+	margin: 0 auto;
 	padding: 0;
+	display: inline;
+	width: 100%;
+	max-height: 100%;
+	white-space: nowrap;
 	visibility: hidden;
 	opacity: 0;
 	transition: all ease .5s;
 }
-.nav-head ul.sub-nav li{
-	list-style-type: none;
-	background-color: #fff;
-	padding: 10px;
+.nav-head .sub-nav img{
+	display: inline;
+	width: 70px;
 }
-.nav-head ul.sub-nav li a{
+.nav-head a{
+	display: inline;
+}
+.nav-head .sub-nav a{
 	transition: opacity 1s ease;
 }
-.nav-head ul.sub-nav li:hover a{
+.nav-head .sub-nav a:hover{
 	opacity: 0.5;
 	transition: opacity 1s ease;
 }
@@ -120,11 +127,7 @@ header .row img.title-manifeste{
 	flex-basis: 19%;
 	/* border: 2px solid red; */
 }
-/* ANIMATION (TEMPORARY) */
-/* #homepage .formes-container .forme-box:hover{
-	transform: rotate(-5deg) scaleX(1.2);
-	transition: all 0.5s;
-} */
+
 /* shape images */
 #homepage .formes-container img {
 	display: block;
@@ -223,7 +226,13 @@ header .row img.title-manifeste{
 	animation: levitation 4s linear infinite;
 }
 .entre-les-doigts .article-preview:hover{
-	animation-duration: 2s;
+	animation-play-state: paused;
+}
+.entre-les-doigts .article-delay-1{
+	animation-delay: 1s;
+}
+.entre-les-doigts .article-delay-2{
+	animation-delay: 2s;
 }
 @keyframes levitation {
 	0% {
@@ -274,6 +283,11 @@ h4{
 	line-height: 1.1em;
 	font-weight: 400;
 }
+span.title-anim-scroll{
+	position: relative;
+	top: 0px;
+}
+
 /* gallery portion */
 .article-gallery{
 	border-bottom: 2px solid #000;
@@ -482,6 +496,7 @@ b {
 	width: 50px;
 	position: absolute;
 	padding: 20px;
+	transition: all .5s ease;
 }
 .manifeste .icon-1{
 	left: 0px;
@@ -557,7 +572,7 @@ b {
 	justify-content: space-between;
 }
 #nav-forme{
-	width: 70px;
+	/* width: 70px; */
 }
 /* MEDIA QUERIES */ 
 /* ------- smaller than 1280px -------- */

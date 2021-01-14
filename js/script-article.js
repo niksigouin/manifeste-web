@@ -1,6 +1,25 @@
 if (window.innerWidth > 1000) {
+    
+    $( document ).ready(function() {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        
+        // ANIMATION FADE IN DOWN
+        // ARTICLE 15-16
+        $(".animation-fadeInUp").each(function() {
+            var objectBottom = $(this).offset().top + $(this).outerHeight()*.4;
+            
+            if (objectBottom < windowBottom) {
+              $(this).removeClass("fadeOut");
+                $(this).addClass("animated fadeInUp");
+                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+            } else {
+              $(this).removeClass("fadeInUp");
+              $(this).addClass("fadeOut");
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+            }
+        });
+    });
 
-    // MOVE TITLE ON SCROLL : ARTICLE 15
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
         var orangeIcon = $("img.img-anim-scroll");
@@ -9,6 +28,8 @@ if (window.innerWidth > 1000) {
         var textManifesteRight = $("section.texte-manifeste em");
         var screenHeight = $(this).innerHeight();
 
+        // MOVE TITLE ON SCROLL
+        // ARTICLE 15
         $("#orange-icon").each(function() {
             var objectTop = $(this).offset().top;
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
@@ -22,6 +43,7 @@ if (window.innerWidth > 1000) {
                 }
             }
         });
+        // ARTICLE 16
         $("#soleil").each(function() {
             var objectTop = $(this).offset().top;
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
@@ -46,6 +68,7 @@ if (window.innerWidth > 1000) {
                 }
             }
         });
+        // ARTICLE MANIFESTE
         $("#orange-text").each(function() {
             var objectTop = $(this).offset().top;
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
@@ -53,7 +76,6 @@ if (window.innerWidth > 1000) {
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {                
                 textManifesteLeft.css('left',(-75+(windowBottom-objectTop)/7)+'vw');
                 textManifesteRight.css('left',(75-(windowBottom-objectTop)/7)+'vw');
-                console.log("allo");
                 if ((75-(windowBottom-objectTop)/7) < 0){
                     textManifesteLeft.css('left','0vw');
                     textManifesteRight.css('left','0vw');

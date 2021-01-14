@@ -114,7 +114,6 @@ if (window.innerWidth > 1000) {
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
 
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
-              console.log('allo');
               title.eq(3).css('left',(100-((windowBottom-objectTop)/10)-10)+'vw');
               title.eq(4).css('left',(100-((windowBottom-objectTop)/10)-5)+'vw');
               title.eq(5).css('left',(100-((windowBottom-objectTop)/10))+'vw');

@@ -39,6 +39,14 @@
 #matiere-grise .forme{
 	width: 50px;
 }
+#matiere-grise .img-anim-scroll{
+	position: relative;
+	top: 0;
+}
+#matiere-grise .img-anim-scroll+.img-anim-scroll{
+	position: relative;
+	top: 0;
+}
 #matiere-grise .anim > *{
 	margin-left: -20px; /* for the shapes to interlock */
 	margin-right: -20px;

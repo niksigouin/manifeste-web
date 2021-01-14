@@ -2,7 +2,14 @@
 /* Styles - Article 11 */
 
 video{
-	max-width:100%;
+	width:100%;
+	margin: 0px auto;
+	display: block;
+	max-width: 1920px;
+}
+.full-col video{
+	max-width: 1280px;
+	padding: 40px;
 }
 #manifeste{
 	background-color: #000;
@@ -26,7 +33,10 @@ video{
 	position: relative;
 }
 
-
+#manifeste .row.centered{
+	align-items: center;
+	justify-content: center;
+}
 
 /* ----------- larger than 1280px ----------- */
 @media screen and (min-width: 1281px) {

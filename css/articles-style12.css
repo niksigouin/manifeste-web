@@ -20,7 +20,7 @@
 	margin-left: 20%;
 }
 #a-dieu-vit .forme-box{
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 #a-dieu-vit .article-text .img-box img{
 	width: 140%;
@@ -28,6 +28,17 @@
 #a-dieu-vit{
 	background-color: #A9ADAE;
 }
+#a-dieu-vit .mega-forme{
+}
+#a-dieu-vit .forme-box{
+	/* wont work because of overflow hidden */
+	position: sticky;
+	top: 0;
+}
+#a-dieu-vit{
+	overflow-x: hidden;
+}
+
 
 
 /* ----- MEDIA QUERIES ----- */

@@ -14,7 +14,6 @@ if (window.innerWidth > 1000) {
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
                 orangeIcon.eq(0).css('right',(50-(windowBottom-objectTop)/10)+'vw');
                 orangeIcon.eq(1).css('left',(50-(windowBottom-objectTop)/10)+'vw');
-                console.log();
                 if ((50-(windowBottom-objectTop)/10) < 0){
                     orangeIcon.eq(0).css('right','0vw');
                     orangeIcon.eq(1).css('left','0vw');
@@ -27,7 +26,6 @@ if (window.innerWidth > 1000) {
             var soleilWidth = soleil.css('width');
             
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
-                console.log((windowBottom-objectTop)/10);
                 soleil.eq(0).css('left',(((windowBottom-objectTop)/10)-10)+'vw');
                 soleil.eq(1).css('left',(((windowBottom-objectTop)/10)-15)+'vw');
                 soleil.eq(2).css('left',(((windowBottom-objectTop)/10)-20)+'vw');

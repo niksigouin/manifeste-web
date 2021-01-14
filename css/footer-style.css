@@ -98,6 +98,8 @@ footer #icon-manifeste .forme{
 	color: #fff;
 	z-index: 30;
 	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
 }
 #overlay .row{
 	height: inherit;
@@ -118,6 +120,12 @@ footer #icon-manifeste .forme{
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
+	}
+}
+/* ----------- smaller than 460px ----------- */
+@media screen and (max-width: 460px) {
+	.mot-orange{
+		font-size: 0.8em;
 	}
 }
 

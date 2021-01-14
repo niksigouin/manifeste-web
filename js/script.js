@@ -95,16 +95,16 @@ if (window.innerWidth > 1000) {
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
 
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
-              title.eq(0).css('left',(100-((windowBottom-objectTop)/10)-10)+'vw');
-              title.eq(1).css('left',(100-((windowBottom-objectTop)/10)-5)+'vw');
-              title.eq(2).css('left',(100-((windowBottom-objectTop)/10))+'vw');
-              if ((100-((windowBottom-objectTop)/10)-10) < 0){
+              title.eq(0).css('left',(100-((windowBottom-objectTop)/10)-40)+'vw');
+              title.eq(1).css('left',(100-((windowBottom-objectTop)/10)-30)+'vw');
+              title.eq(2).css('left',(100-((windowBottom-objectTop)/10)-20)+'vw');
+              if ((100-((windowBottom-objectTop)/10)-40) < 0){
                 title.eq(0).css('left','0vw');
               }
-              if ((100-((windowBottom-objectTop)/10)-5) < 0){
+              if ((100-((windowBottom-objectTop)/10)-30) < 0){
                 title.eq(1).css('left','0vw');
               }
-              if ((100-((windowBottom-objectTop)/10)) < 0){
+              if ((100-((windowBottom-objectTop)/10)-20) < 0){
                 title.eq(2).css('left','0vw');
               }
             }
@@ -114,16 +114,16 @@ if (window.innerWidth > 1000) {
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
 
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
-              title.eq(3).css('left',(100-((windowBottom-objectTop)/10)-10)+'vw');
-              title.eq(4).css('left',(100-((windowBottom-objectTop)/10)-5)+'vw');
-              title.eq(5).css('left',(100-((windowBottom-objectTop)/10))+'vw');
-              if ((100-((windowBottom-objectTop)/10)-10) < 0){
+              title.eq(3).css('left',(100-((windowBottom-objectTop)/10)-40)+'vw');
+              title.eq(4).css('left',(100-((windowBottom-objectTop)/10)-30)+'vw');
+              title.eq(5).css('left',(100-((windowBottom-objectTop)/10)-20)+'vw');
+              if ((100-((windowBottom-objectTop)/10)-40) < 0){
                 title.eq(3).css('left','0vw');
               }
-              if ((100-((windowBottom-objectTop)/10)-5) < 0){
+              if ((100-((windowBottom-objectTop)/10)-30) < 0){
                 title.eq(4).css('left','0vw');
               }
-              if ((100-((windowBottom-objectTop)/10)) < 0){
+              if ((100-((windowBottom-objectTop)/10)-20) < 0){
                 title.eq(5).css('left','0vw');
               }
             }

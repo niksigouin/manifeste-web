@@ -65,29 +65,33 @@
   font-weight: 400;
 	line-height: 0.8em;
 }
+div.text-soleil{
+	position: absolute;
+}
 #peluches-moutonnees-boutonnees .anim-wrapper{
 	position: relative;
 	height: 80vh;
 	width: 100%;
 }
 
-#peluches-moutonnees-boutonnees .anim h2{
+#peluches-moutonnees-boutonnees .anim div{
 	position: absolute;
+	transform: translate(-50%, 50%);
+	width: 25vw;
 }
-#peluches-moutonnees-boutonnees .anim h2:first-of-type{
-	left: 0px;
+#peluches-moutonnees-boutonnees .anim h2{
+	text-align: center;
+}
+#peluches-moutonnees-boutonnees .anim div:first-of-type{
 	top: 0vh;
 }
-#peluches-moutonnees-boutonnees .anim h2:nth-of-type(2){
-	left: 20%;
+#peluches-moutonnees-boutonnees .anim div:nth-of-type(2){
 	top: 20vh;
 }
-#peluches-moutonnees-boutonnees .anim h2:nth-of-type(3){
-	right: 20%;
+#peluches-moutonnees-boutonnees .anim div:nth-of-type(3){
 	top: 40vh;
 }
-#peluches-moutonnees-boutonnees .anim h2:last-of-type{
-	right: 0px;
+#peluches-moutonnees-boutonnees .anim div:last-of-type{
 	top: 60vh;
 }
 #peluches-moutonnees-boutonnees .mini-forme{

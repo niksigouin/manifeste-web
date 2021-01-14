@@ -1,0 +1,33 @@
+/* CSS Document */
+/* Styles - Article 11 */
+
+video{
+	max-width:100%;
+}
+#manifeste{
+	background-color: #000;
+}
+.texte-manifeste em{
+	font-family: "Neue World", serif;
+	text-transform: none;
+	position: relative;
+	left: 600px; /* décalage (deux fois celui du texte) */
+}
+.texte-manifeste{
+	color: #FF6333;
+	text-transform: uppercase;
+	width: 400px;
+	margin-left: -200px;
+	position: absolute;
+	left: calc(50% - 300px); /* décalage ajuster le num de pixels selon scroll */
+}
+#manifeste .text-container{
+	min-height: 2000px;
+	position: relative;
+}
+
+
+
+/* ----------- larger than 1280px ----------- */
+@media screen and (min-width: 1281px) {
+}

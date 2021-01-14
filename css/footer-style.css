@@ -72,6 +72,13 @@ footer ul li:hover{
 	margin-left: 2px;
 	transition: all 0.2s ease;
 }
+footer #icon-manifeste:hover .forme{
+	transition: all 0.2s ease;
+	transform: rotate3d(0, 4, 1, 30deg);
+}
+footer #icon-manifeste .forme{
+	transition: all 0.2s ease;
+}
 /* ----- MEDIA QUERIES ----- */
 /* ----------- smaller than 1025px ----------- */
 @media screen and (max-width: 1025px) {

@@ -1,14 +1,15 @@
 /* CSS Document */
 /* DEFAULT STYLES */
 
-p, blockquote {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  color: #fff;
+#sub-conscient-intrusif{
+    padding: 20px;
 }
-h1 {
+#sub-conscient-intrusif p, blockquote {
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+#sub-conscient-intrusif h1 {
   font-family: "Neue World", serif;
   text-transform: uppercase;
   font-size: 10em;
@@ -33,21 +34,10 @@ sub-conscient-intrusif h3 {
   line-height: 0.8em;
   color: #fff;
 }
-/* TITLE AND HERO */
-.title {
-  /* background-color: aquamarine; */
-	margin-top: 40px;
-	padding-left: 20px;
-}
 #sub-conscient-intrusif .title-intrusif {
   /* background-color: aquamarine; */
 	margin-top: -20px;
 	padding-left: 20px;
-}
-.credits {
-  /* background-color: cornflowerblue; */
-	padding-left: 20px;
-	padding-right: 20px;
 }
 .img-box-sub-conscient {
   flex: 1;
@@ -60,7 +50,7 @@ sub-conscient-intrusif h3 {
   width: 100%;
 }
 /* TEXT STYLE CLASSES */
-.bold {
+#sub-conscient-intrusif .bold {
   font-weight: 10em;
 }
 #sub-conscient-intrusif .article-text {
@@ -97,6 +87,9 @@ sub-conscient-intrusif h3 {
 #sub-conscient-intrusif{
 	background-color: #A9ADAE;
 }
+#sub-conscient-intrusif .credits{
+	padding-right: 20px;
+}
 #sub-conscient-intrusif .col-medium{
 	flex-basis: 66.66%;
 	margin-top: 5px;
@@ -116,12 +109,12 @@ sub-conscient-intrusif h3 {
   flex-direction: row;
   box-sizing: border-box;
 }
-.align-top{
+#sub-conscient-intrusif .align-top{
 	margin-top: -60px;
 }
-.bold{
+#sub-conscient-intrusif .bold{
 	font-weight: bold;
 }
-.italic{
+#sub-conscient-intrusif .italic{
 	font-style: italic;
 }

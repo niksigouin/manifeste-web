@@ -20,7 +20,7 @@ header{
 }
 
 header .forme{
-	width: 50px;
+	width: 50px !important;
 }
 header .img-box{
 	flex-basis: 5%;

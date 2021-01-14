@@ -78,7 +78,8 @@
 #leo .scroll-box{
 	margin-left: 10px;
 	direction: ltr;
-	height: calc(120vh - 340px);
+	height: calc(100vh - 300px);
+	margin-bottom: 40px;
 }
 #leo .scroll-box::-webkit-scrollbar{
 	width: 10px;
@@ -97,13 +98,15 @@
   border-radius: 10px;
 }
 
-/* Handle on hover */
-#leo .scroll-box::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
 #leo .half-col.scroll-box{
 	flex-basis: calc(50% + 15px);
 }
 #leo .scroll-container{
     padding-top: 20px;
+}
+#leo{
+	background-image: url("../Links/leo_hero_1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }

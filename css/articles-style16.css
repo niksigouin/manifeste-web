@@ -4,6 +4,7 @@
 #peluches-moutonnees-boutonnees {
 	background-color: #A9ADAE;
 	padding-top: 20px;
+	overflow-x: hidden;
 }
 #peluches-moutonnees-boutonnees p, #peluches-moutonnees-boutonnees h1 {
 	color: #fff;

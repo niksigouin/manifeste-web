@@ -75,6 +75,7 @@ h1 {
 #fatum .scroll-container .img-box img{
 	width: 60%;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 #fatum .article-text p{
 	max-width: 500px;

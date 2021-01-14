@@ -20,15 +20,21 @@ video{
 	font-family: "Neue World", serif;
 	text-transform: none;
 	position: relative;
-	left: 600px; /* décalage (deux fois celui du texte) */
+	right: 0;
+}
+.texte-manifeste span{
+	position: relative;
+	right: 0;
 }
 .texte-manifeste{
 	color: #FF6333;
 	text-transform: uppercase;
 	width: 400px;
-	margin-left: -200px;
-	position: absolute;
-	left: calc(50% - 300px); /* décalage ajuster le num de pixels selon scroll */
+	position: relative;
+	margin: 0 auto;
+	top: 0;
+	right: 0vw;
+	left: 0vw;
 }
 #manifeste .text-container{
 	min-height: 1000px;

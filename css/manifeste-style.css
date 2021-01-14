@@ -49,6 +49,10 @@ video{
 	padding-top: 60px;
 }
 
-/* ----------- larger than 1280px ----------- */
-@media screen and (min-width: 1281px) {
+/* ----------- smaller than 1000px HEIGHT ----------- */
+@media screen and (max-height: 700px) {
+	#manifeste #orange-text p{
+	font-size: 0.8em;
+		padding-left: 15%;
+}
 }

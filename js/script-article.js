@@ -51,10 +51,10 @@ if (window.innerWidth > 1000) {
             var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
             
             if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {                
-                textManifesteLeft.css('left',(-75+(windowBottom-objectTop)/10)+'vw');
-                textManifesteRight.css('left',(75-(windowBottom-objectTop)/10)+'vw');
+                textManifesteLeft.css('left',(-75+(windowBottom-objectTop)/7)+'vw');
+                textManifesteRight.css('left',(75-(windowBottom-objectTop)/7)+'vw');
                 console.log("allo");
-                if ((75-(windowBottom-objectTop)/10) < 0){
+                if ((75-(windowBottom-objectTop)/7) < 0){
                     textManifesteLeft.css('left','0vw');
                     textManifesteRight.css('left','0vw');
                 }

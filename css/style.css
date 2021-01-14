@@ -50,6 +50,23 @@ img{
 #overlay .row > *{
 	align-self: center;
 }
+#overlay .medium-text{
+	font-family: acumin-pro, sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	padding: 40px;
+}
+#overlay .medium-text.serif{
+	color: #A9ADAE;
+	font-family: NeueWorld, serif;
+	font-size: 2.4em;
+}
+.mot-orange{
+	color: #FF6333;
+}
+.centered {
+  text-align: center;
+}
 
 /* ----- MEDIA QUERIES ----- */
 /* ----------- smaller than 960px ----------- */

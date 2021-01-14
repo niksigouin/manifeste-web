@@ -47,13 +47,15 @@ if (window.innerWidth > 1000) {
           }).scroll();
 
 
-        // CHANGE ICON ON SCROLL
+        // CHANGE ICON ON SCROLL ET CHANGE MENU ALPHA ON SCROLL
         $(window).scroll(function() {
           var windowBottom = $(this).scrollTop() + $(this).innerHeight();
           var icon = $(".main-btn img");
+          var menu = $("header.nav-head");
           var headerHeight = 70;
           var screenHeight = $(this).innerHeight();
 
+          var heroHeight = $(".hero").outerHeight();
           var veriteSection = $($("#verite")).offset().top + screenHeight - headerHeight-1;
           var doigtsSection = $($("#doigts")).offset().top + screenHeight - headerHeight-1;
           var interditSection = $($("#interdit")).offset().top + screenHeight - headerHeight-1;
@@ -73,6 +75,62 @@ if (window.innerWidth > 1000) {
           } else {
             icon.attr("src", "Links/svg/nav-manif.svg");
           }
+          
+          if (windowBottom-screenHeight > heroHeight) {
+            menu.css({'background-color':'rgba(255,255,255,1)','border-bottom':'1px solid rgba(0,0,0,1)'});
+          } else {
+            menu.css({'background-color':'rgba(255,255,255,0)','border-bottom':'1px solid rgba(0,0,0,0)'});
+          }
+        }).scroll();
+        
+
+        // MOVE TITLE ON SCROLL
+        $(window).scroll(function() {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          var title = $("span.title-anim-scroll");
+          var screenHeight = $(this).innerHeight();
+
+          $("#verite").each(function() {
+            var objectTop = $(this).offset().top;
+            var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
+
+            if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
+              title.eq(0).css('left',(100-((windowBottom-objectTop)/10)-10)+'vw');
+              title.eq(1).css('left',(100-((windowBottom-objectTop)/10)-5)+'vw');
+              title.eq(2).css('left',(100-((windowBottom-objectTop)/10))+'vw');
+              if ((100-((windowBottom-objectTop)/10)-10) < 0){
+                title.eq(0).css('left','0vw');
+              }
+              if ((100-((windowBottom-objectTop)/10)-5) < 0){
+                title.eq(1).css('left','0vw');
+              }
+              if ((100-((windowBottom-objectTop)/10)) < 0){
+                title.eq(2).css('left','0vw');
+              }
+            }
+          });
+          $("#interdit").each(function() {
+            var objectTop = $(this).offset().top+600;
+            var objectBottom = $(this).offset().top + $(this).outerHeight()*1;
+
+            if ((objectTop < windowBottom) && (objectBottom > windowBottom-screenHeight)) {
+              console.log('allo');
+              title.eq(3).css('left',(100-((windowBottom-objectTop)/10)-10)+'vw');
+              title.eq(4).css('left',(100-((windowBottom-objectTop)/10)-5)+'vw');
+              title.eq(5).css('left',(100-((windowBottom-objectTop)/10))+'vw');
+              if ((100-((windowBottom-objectTop)/10)-10) < 0){
+                title.eq(3).css('left','0vw');
+              }
+              if ((100-((windowBottom-objectTop)/10)-5) < 0){
+                title.eq(4).css('left','0vw');
+              }
+              if ((100-((windowBottom-objectTop)/10)) < 0){
+                title.eq(5).css('left','0vw');
+              }
+            }
+          });
+
+
         }).scroll();
 
 

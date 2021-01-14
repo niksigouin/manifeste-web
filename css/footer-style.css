@@ -84,3 +84,41 @@ footer #icon-manifeste .forme{
 @media screen and (max-width: 1025px) {
 
 }
+
+
+/* OVERLAY */
+#overlay{
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left:0;
+	background-color: #000;
+	color: #fff;
+	z-index: 30;
+	overflow: hidden;
+}
+#overlay .row{
+	height: inherit;
+	align-content: center;
+	justify-content: center;
+}
+#overlay .row > *{
+	align-self: center;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- smaller than 960px ----------- */
+@media screen and (max-width: 960px) {
+	#overlay{
+		visibility: visible;
+	}
+	body{
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+
+/* end of OVERLAY */

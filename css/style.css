@@ -29,6 +29,45 @@ img{
 	src: url(../fonts/NeueWorld-SemiExtendedLight.otf);
  }
 
+/* OVERLAY */
+#overlay{
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left:0;
+	background-color: #000;
+	color: #fff;
+	z-index: 30;
+	overflow: hidden;
+}
+#overlay .row{
+	height: inherit;
+	align-content: center;
+	justify-content: center;
+}
+#overlay .row > *{
+	align-self: center;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----------- smaller than 960px ----------- */
+@media screen and (max-width: 960px) {
+	#overlay{
+		visibility: visible;
+	}
+	body{
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+
+/* end of OVERLAY */
+
+
+
 /* HEADER */
 
 .nav-head{
@@ -361,8 +400,25 @@ b {
 	background-repeat: no-repeat;
 	width: 100%;
 }
+.banner video{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	z-index: 5;
+}
+.row-forme img{
+	z-index: 10;
+}
+.banner .row-forme{
+	position: absolute;
+	top: 0;
+}
+.banner {
+	position: relative;
+}
 .entre-les-doigts .banner{
-    background-image: url("../Links/placeholder-frank1.png");
+    /* background-image: url("../Links/placeholder-frank1.png"); */
+	overflow: hidden;
 }
 .entre-les-doigts .row{
 	min-height: 180px;
@@ -458,6 +514,9 @@ b {
 }
 .univers-a-renouveau .article-preview:last-of-type{
 	margin-top: 150px;
+}
+.univers-a-renouveau .article-gallery{
+	background-color: #DBDBDB;
 }
 
 /* MANIFESTE (BAS DE PAGE) */
@@ -778,3 +837,6 @@ body{
 	-webkit-animation-name: fadeOut;
 	animation-name: fadeOut;
   }
+
+
+

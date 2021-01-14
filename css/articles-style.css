@@ -327,7 +327,6 @@ blockquote {
 }
 #defaire-le-lit .anim{
 	height: 100vh;
-	border: solid 2px green;
 	justify-content: space-around;
 	align-items: center;
 	display: flex;
@@ -339,7 +338,6 @@ blockquote {
 #defaire-le-lit .anim .img-box{
 	margin-left: 2.75%;
 	height: inherit;
-	border: 2px solid red;
 }
 .img-box.no-margins img{
 	margin: 0;
@@ -424,7 +422,9 @@ blockquote {
 #la-mort-eclot-toujours-sans-douleur .anim .img-box{
 	border: 10px solid #FF931E;
 }
-
+main {
+	padding-bottom: 60px;
+}
 
 @keyframes bounce-vertical {
   0%   {padding-top: 0px;}

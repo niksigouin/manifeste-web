@@ -1,5 +1,5 @@
 /* CSS Document */
-/* Styles - Article 11 */
+/* Styles - Manifeste */
 
 video{
 	width:100%;
@@ -29,7 +29,7 @@ video{
 	left: calc(50% - 300px); /* décalage ajuster le num de pixels selon scroll */
 }
 #manifeste .text-container{
-	min-height: 2000px;
+	min-height: 1000px;
 	position: relative;
 }
 

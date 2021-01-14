@@ -1,5 +1,8 @@
 /* CSS Document */
 /* Styles - Article 11 */
+#quelque-chose-comme main{
+	padding-bottom: 0px;
+}
 
 #quelque-chose-comme .title h1{
 	font-size: 6em;
@@ -18,14 +21,14 @@
 	flex-basis: 59%;
 }
 #quelque-chose-comme .back-image:first-of-type{
-	background-image: url("../Links/qqch_side_left1.jpg");
+	background-image: url("../Links/richter.gif"); /* left - richter1 */
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
 	height: 1600px;
 }
 #quelque-chose-comme .back-image:last-of-type{
-	background-image: url("../Links/qqch_side_right1.jpg");
+	background-image: url("../Links/richter-2.gif"); /* right - richter2 */
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
@@ -41,7 +44,7 @@
 	padding: 20px; /* smaller margins on article text, normally 40px */
 }
 #quelque-chose-comme .content-wrapper{
-	background-image: url("../Links/qqch_side_left1.jpg");
+	background-image: url("../Links/richter.gif");
 	background-size: cover;
 	background-repeat: repeat-y;
 }

@@ -1,14 +1,6 @@
 /* CSS Document */
 /* DEFAULT STYLES */
-body {
-  margin: 0;
-}
-p, h1, h2, h3, h4, h5 {
-  margin: 0;
-}
-img {
-  display: block;
-}
+
 p, blockquote {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
@@ -33,47 +25,13 @@ h1 {
 #sub-conscient-intrusif h2{
 	color: #fff;
 }
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.half-col {
-  flex-basis: 50%;
-}
-.col-small {
-  flex-basis: 16.65%;
-}
-.credits p {
-  text-transform: uppercase;
+sub-conscient-intrusif h3 {
   font-family: "Neue World", serif;
-  font-size: 1.3em;
-}
-.credits .author, .credits .visuals-by {
-  font-family: acumin-pro, sans-serif;
-  line-height: 1em;
-  padding-bottom: 16px;
-}
-#fatum .intro {
-  min-height: 600px;
-}
-#fatum .intro > * {
-  min-height: inherit;
-}
-blockquote {
-  margin: 0;
-  color: #000;
-  font-size: 2.2em;
-  font-weight: 300;
-  line-height: 1.3em;
-}
-.quote {
-  position: relative;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-transform: uppercase;
+  font-size: 10em;
+  font-weight: 400;
+  line-height: 0.8em;
+  color: #fff;
 }
 /* TITLE AND HERO */
 .title {
@@ -81,54 +39,15 @@ blockquote {
 	margin-top: 40px;
 	padding-left: 20px;
 }
-.title-intrusif {
+#sub-conscient-intrusif .title-intrusif {
   /* background-color: aquamarine; */
-	margin-top: 40px;
+	margin-top: -20px;
 	padding-left: 20px;
 }
 .credits {
   /* background-color: cornflowerblue; */
 	padding-left: 20px;
 	padding-right: 20px;
-}
-.hero {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row !important;
-}
-#fatum .hero {
-  background-image: url("../Links/fatum-bg.jpg");
-}
-.hero .forme {
-  flex-basis: 60%;
-}
-.half-col {
-  flex-basis: 50%;
-  position: relative;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-}
-.v-centered {
-  flex-direction: column;
-}
-.v-centered .img-box{
-	align-items: center;
-  justify-content: center;
-}
-.img-box {
-  flex: 1;
-  position: relative;
-
-	align-items:flex-start;
-  justify-content: center; /* center horizontally */
-  display: flex;
-  height: inherit;
 }
 .img-box-sub-conscient {
   flex: 1;
@@ -141,201 +60,30 @@ blockquote {
   width: 100%;
 }
 /* TEXT STYLE CLASSES */
-.centered {
-  text-align: center;
-}
-.serif {
-  font-family: "Neue World", serif;
-}
-.sans-serif{
-	font-family: acumin-pro, sans-serif;
-}
-.title .sans-serif{
-	font-weight: 300;
+.bold {
+  font-weight: 10em;
 }
 #sub-conscient-intrusif .article-text {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
 }
-.col-large{
-	flex-basis: 83.35%;
-}
-.col-large img{
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 40px;
-	box-sizing: border-box;
-}
-#dieffen-bacha .title{
-	height: 230px;
-	z-index: 10;
-	position: relative;
-	width: 100%;
-}
-#dieffen-bacha #pos-tweak1{
-	position: absolute;
-	right: 5%;
-	top: 0px;
-}
-#dieffen-bacha #pos-tweak2{
-	position: absolute;
-	right: 5%;
-	margin-top: 46%;
-	/* top: calc(100vh - 340px); */
-}
-#au-travers-de-ta-fenetre .hero{
-	margin-bottom: 100px;
-}
-.full-col{
-	flex: 1;
-}
-/* thin intro */
-.thin{
-	min-height: inherit; /* cancel min-width given by intro */
-}
-.thin blockquote{
-	padding: 40px 10%;
-}
-.justified p:not(.serif){
-	text-align: justify;
-}
-.text-container{
-	max-width: 1280px; /* was 1000px */
-	margin: 0 auto;
-	position: relative;
-}
-.over-img{
-	position: absolute;
-}
-.image-fill{
-	width: 100%;
-}
-.half-col .col-small{
-	width: 33%; /* 1/6th width */
-}
-.fleche{
-	width: 50px;
-	margin: 0px auto;
-}
-.symbole-anime{
-	height: 200px;
-}
 .img-box-sub{
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 }
-.right-aligned{
-	text-align: right;
-}
-.text-split > *{
-	display: inline-block;
-}
-.text-split{
-	display: flex;
-	justify-content: space-between;
-}
-#la-mort-eclot-toujours-sans-douleur .title-wrapper{
-	position: relative;
-	height: 1000px;
-}
-#la-mort-eclot-toujours-sans-douleur .float{
-	position: absolute;
-	top: 0px;
-	width: 100%;
-}
-#la-mort-eclot-toujours-sans-douleur #pos-tweak1, #la-mort-eclot-toujours-sans-douleur #pos-tweak3{
-	position: absolute;
-	right: 40px;
-}
-#la-mort-eclot-toujours-sans-douleur #pos-tweak2{
-	position: absolute;
-	margin-left: -380px;
-	left: 50%;
-}
-#la-mort-eclot-toujours-sans-douleur .back-image{
-	width: 1000px;
-	margin-left: calc( -750px + 25vw);
-	left: 0px;
-	position: absolute;
-}
-.back-image img{
-	display: block;
-	width: 100%;
-}
-#la-mort-eclot-toujours-sans-douleur{
-    background-color: #1D1C19;
-}
-#la-mort-eclot-toujours-sans-douleur p, #la-mort-eclot-toujours-sans-douleur h1{
-	color: #fff;
-}
 #sub-conscient-intrusif .third-col {
   flex-basis: 33.33%;
 	padding: 20px; /* overrides the 40px from .article-text */
-}
-#defaire-le-lit .vertical-text .title{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    min-height: 1120px;
-    width: 100%;
-    transform: rotate(180deg);
-	margin-left: 40px;
-}
-#defaire-le-lit .vertical-text{
-	background-color: #A9ADAE;
-}
-#defaire-le-lit{
-	background-color: #000;
-}
-#defaire-le-lit p{
-	color: #A9ADAE;
-}
-.medium-text{
-	font-family: acumin-pro, sans-serif;
-	font-size: 2em;
-	font-weight: 300;
-	padding: 40px;
-}
-.medium-text.serif{
-	color: #A9ADAE;
-	font-family: "Neue World", serif;
-	font-size: 2.4em;
-}
-#defaire-le-lit .anim{
-	height: 100vh;
-	border: solid 2px green;
-	justify-content: space-around;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-}
-#defaire-le-lit .anim .v-centered{
-	position: absolute;
-}
-#defaire-le-lit .anim .img-box{
-	margin-left: 2.75%;
-	height: inherit;
-	border: 2px solid red;
 }
 #sub-conscient-intrusif .img-box.no-margins img{
 	margin: 0;
 	padding: 0;
 }
-.no-margins {
-	margin: 0;
-	padding: 0;
-}
-.col-large .half-col{
-	flex-basis: 66.66%;
-}
-.col-large .third-col{
-	flex-basis: 33.33%;
-}
 #sub-conscient-intrusif .img-box .mini-forme{
 	width: 120px;
 }
-/*Léo article 7*/
 #sub-conscient-intrusif .text-container-special1 {
   max-width: 1280px; 
   margin-top: 55px;
@@ -367,4 +115,13 @@ blockquote {
 #sub-conscient-intrusif .article-text {
   flex-direction: row;
   box-sizing: border-box;
+}
+.align-top{
+	margin-top: -60px;
+}
+.bold{
+	font-weight: bold;
+}
+.italic{
+	font-style: italic;
 }

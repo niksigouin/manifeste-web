@@ -41,6 +41,8 @@ img{
 	color: #fff;
 	z-index: 30;
 	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
 }
 #overlay .row{
 	height: inherit;
@@ -49,6 +51,23 @@ img{
 }
 #overlay .row > *{
 	align-self: center;
+}
+#overlay .medium-text{
+	font-family: acumin-pro, sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	padding: 40px;
+}
+#overlay .medium-text.serif{
+	color: #A9ADAE;
+	font-family: NeueWorld, serif;
+	font-size: 2.4em;
+}
+.mot-orange{
+	color: #FF6333;
+}
+.centered {
+  text-align: center;
 }
 
 /* ----- MEDIA QUERIES ----- */
@@ -61,6 +80,12 @@ img{
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
+	}
+}
+/* ----------- smaller than 460px ----------- */
+@media screen and (max-width: 460px) {
+	.mot-orange{
+		font-size: 0.8em;
 	}
 }
 

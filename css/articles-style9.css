@@ -26,7 +26,7 @@
 #sub-conscient-intrusif h2{
 	color: #fff;
 }
-sub-conscient-intrusif h3 {
+#sub-conscient-intrusif h3 {
   font-family: "Neue World", serif;
   text-transform: uppercase;
   font-size: 10em;
@@ -117,4 +117,8 @@ sub-conscient-intrusif h3 {
 }
 #sub-conscient-intrusif .italic{
 	font-style: italic;
+}
+#sub-conscient-intrusif .fleche{
+	position: relative;
+	bottom: 50px;
 }

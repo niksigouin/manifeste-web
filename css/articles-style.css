@@ -327,6 +327,13 @@ blockquote {
 #defaire-le-lit p{
 	color: #A9ADAE;
 }
+#defaire-le-lit main{
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+#defaire-le-lit .credits{
+	margin-top: 40px;
+}
 .medium-text{
 	font-family: acumin-pro, sans-serif;
 	font-size: 2em;
@@ -381,7 +388,7 @@ blockquote {
 	width: 100%;
 	z-index: 10;
 }
-#ton-corps .fleche, #manifeste .fleche, #sub-conscient-intrusif .fleche, #leo .fleche{
+#ton-corps .fleche, #manifeste .fleche, #sub-conscient-intrusif .fleche, #leo .fleche, #manifeste-pour-un-art-virus .fleche, #nevrose .fleche{
 	padding-top: 0px;
 	animation-name: bounce-vertical;
   	animation-duration: 2s;

@@ -10,9 +10,11 @@ video{
 .full-col video{
 	max-width: 1280px;
 	padding: 40px;
+	width: 80%;
 }
 #manifeste{
 	background-color: #000;
+	overflow: hidden;
 }
 .texte-manifeste em{
 	font-family: "Neue World", serif;
@@ -36,6 +38,9 @@ video{
 #manifeste .row.centered{
 	align-items: center;
 	justify-content: center;
+}
+#manifeste main{
+	padding-top: 60px;
 }
 
 /* ----------- larger than 1280px ----------- */

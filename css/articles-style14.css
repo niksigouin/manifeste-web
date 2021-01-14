@@ -9,6 +9,9 @@
 #manifeste-pour-un-art-virus {
 	background-color: #000;
 }
+#manifeste-pour-un-art-virus main{
+	padding-top: 60px;
+}
 #manifeste-pour-un-art-virus p, #manifeste-pour-un-art-virus h1{
 	color: #fff;
 }
@@ -77,6 +80,7 @@
 	padding: 60px;
 	box-sizing: border-box;
 }
+
 /* ----- MEDIA QUERIES ----- */
 /* ----------- larger than 1280px ----------- */
 @media screen and (min-width: 1281px) {

@@ -48,6 +48,7 @@
 }
 #nevrose .article-text{
 	max-width: 900px;
+	z-index: 10;
 }
 #nevrose .over-img{
 	height: inherit;

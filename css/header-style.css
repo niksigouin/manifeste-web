@@ -32,10 +32,16 @@ header .row{
     justify-content: space-between;
     align-items: center;
 }
+main{
+	padding-top: 70px;
+}
+
 header img.title-manifeste{
 	height: 35px;
 	padding: 15px 10px;
+	transition: all 1s ease;
 }
-main{
-	padding-top: 70px;
+header img.title-manifeste:hover{
+	transform: rotate3d(-1, -6, -0.2, 30deg);
+	transition: all 0.5s ease;
 }

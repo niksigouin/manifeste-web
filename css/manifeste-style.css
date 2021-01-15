@@ -10,10 +10,18 @@
 	height: 100vh;
 	overflow: hidden;
 }
-.full-col video{
+#manifeste .vid-wrapper{
+	margin: 0 auto;
 	max-width: 1280px;
+}
+.full-col video{
 	padding: 40px;
-	width: 80%;
+	width: 100%;
+	box-sizing: border-box;
+}
+#manifeste .full-col{
+	align-content: center;
+	justify-content: center;
 }
 #manifeste{
 	background-color: #000;

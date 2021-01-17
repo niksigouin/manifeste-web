@@ -309,6 +309,7 @@ header .row img.title-manifeste{
 	transition: all 1s ease;
 }
 
+
 .entre-les-doigts .article-preview{
 	animation: levitation 4s linear infinite;
 }
@@ -348,8 +349,8 @@ header .row img.title-manifeste{
 	position: relative;
 	height: 100%; /* 100% height of parent (row) */
 }
-.verite .row > *, .interdit .row > *{
-	/* all children of row*/
+.verite .row > div, .interdit .row > .article-preview{
+	/* all div children of row*/
 	margin: 0px 20px;
 }
 .verite header h4, .interdit header h4{
@@ -428,10 +429,10 @@ b {
 	font-weight: 700;
 }
 /* offsetting on Y axis */
-.verite .article-preview:nth-of-type(2){
+.verite .article-gallery .row a:nth-child(2) .article-preview{
 	margin-top: 50px;
 }
-.verite .article-preview:nth-of-type(3){
+.verite .article-gallery .row a:nth-child(3) .article-preview{
 	margin-top: 25px;
 }
 
@@ -536,6 +537,7 @@ b {
 .interdit .article-preview{
 	margin: 20px;
 }
+
 .interdit .column:first-of-type .article-preview{
 	margin-top: 150px;
 }
@@ -553,14 +555,17 @@ b {
 }
 .univers-a-renouveau .banner{
 	background-image: url("../Links/genese.png");
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
-.univers-a-renouveau .article-preview:first-of-type{
+
+.univers-a-renouveau .article-gallery .row a:first-child .article-preview{
 	margin-top: 200px;
 }
-.univers-a-renouveau .article-preview:nth-of-type(3){
+.univers-a-renouveau .article-gallery .row a:nth-child(3) .article-preview{
 	margin-top: 80px;
 }
-.univers-a-renouveau .article-preview:last-of-type{
+.univers-a-renouveau .article-gallery .row a:last-of-type .article-preview{
 	margin-top: 150px;
 }
 .univers-a-renouveau .article-gallery{
